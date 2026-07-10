@@ -14,24 +14,25 @@ load_dotenv()
 
 from sqlalchemy.engine import URL
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
+_host = os.environ.get("DATABASE_HOST")
 
-if DATABASE_URL:
-    if DATABASE_URL.startswith("postgres://"):
-        DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
-    engine = create_engine(DATABASE_URL, pool_pre_ping=True)
-else:
+if _host:
     engine = create_engine(
         URL.create(
             drivername="postgresql",
             username=os.environ.get("DATABASE_USER", "postgres"),
             password=os.environ.get("DATABASE_PASSWORD", ""),
-            host=os.environ.get("DATABASE_HOST", "localhost"),
+            host=_host,
             port=int(os.environ.get("DATABASE_PORT", "5432")),
             database=os.environ.get("DATABASE_NAME", "postgres"),
         ),
         pool_pre_ping=True,
     )
+else:
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    if DATABASE_URL.startswith("postgres://"):
+        DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+    engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
 
