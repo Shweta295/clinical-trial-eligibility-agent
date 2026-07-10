@@ -1,0 +1,753 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PatientProfile",
+  "description": "Schema capturing every field needed to evaluate clinical trial eligibility across oncology protocols. Fields marked commonly_missing are frequently absent or incomplete in real-world clinical notes.",
+  "type": "object",
+  "properties": {
+    "patient_id": {
+      "type": "string",
+      "description": "Unique patient identifier (MRN or study-assigned ID)"
+    },
+
+    "demographics": {
+      "type": "object",
+      "description": "Basic patient demographics",
+      "properties": {
+        "age": {
+          "type": "integer",
+          "description": "Patient age in years",
+          "commonly_missing": false
+        },
+        "sex": {
+          "type": "string",
+          "enum": ["male", "female"],
+          "description": "Biological sex",
+          "commonly_missing": false
+        },
+        "country": {
+          "type": "string",
+          "description": "Country of enrollment (relevant for age-of-majority and regulatory requirements like France social security)",
+          "commonly_missing": false
+        },
+        "pregnancy_status": {
+          "type": "string",
+          "enum": ["not_applicable", "negative", "positive", "not_tested"],
+          "description": "Pregnancy test result for women of childbearing potential",
+          "commonly_missing": false
+        },
+        "breastfeeding": {
+          "type": "boolean",
+          "description": "Whether the patient is currently breastfeeding",
+          "commonly_missing": false
+        },
+        "contraception_agreement": {
+          "type": "boolean",
+          "description": "Whether patient (and/or partner) agrees to use effective contraception per protocol requirements",
+          "commonly_missing": true
+        }
+      },
+      "required": ["age", "sex"]
+    },
+
+    "diagnosis": {
+      "type": "object",
+      "description": "Primary cancer diagnosis and staging",
+      "properties": {
+        "cancer_type": {
+          "type": "string",
+          "description": "Primary cancer type (e.g., 'NSCLC', 'breast_cancer')",
+          "commonly_missing": false
+        },
+        "histology": {
+          "type": "string",
+          "description": "Histologic subtype (e.g., 'adenocarcinoma', 'squamous', 'invasive_ductal')",
+          "commonly_missing": false
+        },
+        "stage": {
+          "type": "string",
+          "description": "Disease stage (e.g., 'IIIA', 'IIIB', 'IV')",
+          "commonly_missing": false
+        },
+        "staging_system": {
+          "type": "string",
+          "description": "Staging system used (e.g., 'AJCC_8th_edition')",
+          "commonly_missing": true
+        },
+        "tnm": {
+          "type": "string",
+          "description": "TNM classification if available (e.g., 'T4N2M0')",
+          "commonly_missing": true
+        },
+        "is_metastatic": {
+          "type": "boolean",
+          "description": "Whether disease is metastatic",
+          "commonly_missing": false
+        },
+        "is_locally_advanced": {
+          "type": "boolean",
+          "description": "Whether disease is locally advanced and unresectable",
+          "commonly_missing": false
+        },
+        "de_novo_metastatic": {
+          "type": "boolean",
+          "description": "Whether metastatic disease was present at initial diagnosis",
+          "commonly_missing": true
+        },
+        "inflammatory_breast_cancer": {
+          "type": "boolean",
+          "description": "Whether diagnosis is inflammatory breast cancer (T4d)",
+          "commonly_missing": false
+        }
+      },
+      "required": ["cancer_type", "histology", "stage"]
+    },
+
+    "biomarkers": {
+      "type": "object",
+      "description": "Molecular and immunohistochemical markers",
+      "properties": {
+        "HER2_status": {
+          "type": "string",
+          "enum": ["positive", "negative", "equivocal", "not_tested"],
+          "description": "HER2 status (IHC and/or ISH)",
+          "commonly_missing": false
+        },
+        "HER2_IHC_score": {
+          "type": "string",
+          "enum": ["0", "1+", "2+", "3+", "not_tested"],
+          "description": "HER2 IHC score",
+          "commonly_missing": false
+        },
+        "HER2_ISH_ratio": {
+          "type": "number",
+          "description": "HER2/CEP17 ratio by ISH (FISH or CISH), if performed",
+          "commonly_missing": true
+        },
+        "HER2_gene_copy_number": {
+          "type": "number",
+          "description": "Average HER2 gene copy number (signals/cell), if performed",
+          "commonly_missing": true
+        },
+        "HER2_central_confirmation": {
+          "type": "string",
+          "enum": ["confirmed", "pending", "not_required", "not_done"],
+          "description": "Status of central HER2 testing confirmation",
+          "commonly_missing": true
+        },
+        "ER_status": {
+          "type": "string",
+          "enum": ["positive", "negative", "not_tested"],
+          "description": "Estrogen receptor status",
+          "commonly_missing": false
+        },
+        "PR_status": {
+          "type": "string",
+          "enum": ["positive", "negative", "not_tested"],
+          "description": "Progesterone receptor status",
+          "commonly_missing": false
+        },
+        "PD_L1_TPS": {
+          "type": "number",
+          "description": "PD-L1 Tumor Proportion Score (percentage, 0-100)",
+          "commonly_missing": true
+        },
+        "PD_L1_category": {
+          "type": "string",
+          "enum": ["<1%", "1-49%", ">=50%", "unknown"],
+          "description": "PD-L1 expression category for stratification",
+          "commonly_missing": true
+        },
+        "EGFR_mutation_status": {
+          "type": "string",
+          "enum": ["wild_type", "sensitizing_mutation", "resistance_mutation", "not_tested"],
+          "description": "EGFR mutation status",
+          "commonly_missing": true
+        },
+        "EGFR_mutation_detail": {
+          "type": "string",
+          "description": "Specific EGFR mutation if detected (e.g., 'exon_19_deletion', 'L858R')",
+          "commonly_missing": true
+        },
+        "ALK_rearrangement": {
+          "type": "string",
+          "enum": ["positive", "negative", "not_tested"],
+          "description": "ALK rearrangement status",
+          "commonly_missing": true
+        },
+        "ROS1_rearrangement": {
+          "type": "string",
+          "enum": ["positive", "negative", "not_tested"],
+          "description": "ROS1 rearrangement status",
+          "commonly_missing": true
+        },
+        "KRAS_mutation": {
+          "type": "string",
+          "enum": ["G12C", "other", "wild_type", "not_tested"],
+          "description": "KRAS mutation status",
+          "commonly_missing": true
+        },
+        "TMB": {
+          "type": "number",
+          "description": "Tumor mutational burden (mutations/Mb)",
+          "commonly_missing": true
+        },
+        "DPD_deficiency": {
+          "type": "string",
+          "enum": ["deficient", "normal", "not_tested"],
+          "description": "Dihydropyrimidine dehydrogenase deficiency status",
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "performance_status": {
+      "type": "object",
+      "description": "Functional status assessments",
+      "properties": {
+        "ECOG": {
+          "type": "integer",
+          "enum": [0, 1, 2, 3, 4],
+          "description": "ECOG Performance Status score",
+          "commonly_missing": false
+        },
+        "ECOG_reason_if_2": {
+          "type": "string",
+          "description": "If ECOG is 2, whether attributable to disease burden vs comorbidities (relevant for protocols allowing case-by-case PS 2)",
+          "commonly_missing": true
+        },
+        "life_expectancy_months": {
+          "type": "number",
+          "description": "Estimated life expectancy in months (investigator opinion)",
+          "commonly_missing": true
+        }
+      },
+      "required": ["ECOG"]
+    },
+
+    "lab_values": {
+      "type": "object",
+      "description": "Laboratory values. All must include the date of collection to verify they fall within protocol-required windows.",
+      "properties": {
+        "collection_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date labs were collected (ISO 8601)",
+          "commonly_missing": false
+        },
+        "ANC": {
+          "type": "number",
+          "description": "Absolute neutrophil count (/uL or /mm3)",
+          "commonly_missing": false
+        },
+        "platelets": {
+          "type": "number",
+          "description": "Platelet count (/uL or /mm3)",
+          "commonly_missing": false
+        },
+        "hemoglobin": {
+          "type": "number",
+          "description": "Hemoglobin (g/dL)",
+          "commonly_missing": false
+        },
+        "hemoglobin_transfusion_free_days": {
+          "type": "integer",
+          "description": "Days since last transfusion (protocols require 7-14 day windows)",
+          "commonly_missing": true
+        },
+        "serum_creatinine": {
+          "type": "number",
+          "description": "Serum creatinine (mg/dL)",
+          "commonly_missing": false
+        },
+        "creatinine_clearance": {
+          "type": "number",
+          "description": "Calculated CrCl by Cockcroft-Gault (mL/min)",
+          "commonly_missing": true
+        },
+        "AST": {
+          "type": "number",
+          "description": "Aspartate aminotransferase (U/L)",
+          "commonly_missing": false
+        },
+        "ALT": {
+          "type": "number",
+          "description": "Alanine aminotransferase (U/L)",
+          "commonly_missing": false
+        },
+        "total_bilirubin": {
+          "type": "number",
+          "description": "Total bilirubin (mg/dL)",
+          "commonly_missing": false
+        },
+        "INR": {
+          "type": "number",
+          "description": "International Normalized Ratio",
+          "commonly_missing": true
+        },
+        "aPTT": {
+          "type": "number",
+          "description": "Activated partial thromboplastin time (seconds)",
+          "commonly_missing": true
+        },
+        "ULN_reference": {
+          "type": "object",
+          "description": "Local lab upper limits of normal for comparison",
+          "properties": {
+            "creatinine_ULN": { "type": "number" },
+            "AST_ULN": { "type": "number" },
+            "ALT_ULN": { "type": "number" },
+            "bilirubin_ULN": { "type": "number" }
+          },
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "cardiac": {
+      "type": "object",
+      "description": "Cardiac function and history",
+      "properties": {
+        "LVEF_percent": {
+          "type": "number",
+          "description": "Left ventricular ejection fraction (%)",
+          "commonly_missing": true
+        },
+        "LVEF_method": {
+          "type": "string",
+          "enum": ["echocardiogram", "MUGA"],
+          "description": "Method used to measure LVEF",
+          "commonly_missing": true
+        },
+        "LVEF_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of LVEF assessment",
+          "commonly_missing": true
+        },
+        "QTcF_ms": {
+          "type": "number",
+          "description": "QTcF interval in milliseconds",
+          "commonly_missing": true
+        },
+        "NYHA_class": {
+          "type": "string",
+          "enum": ["I", "II", "III", "IV", "none"],
+          "description": "NYHA heart failure classification",
+          "commonly_missing": true
+        },
+        "MI_within_6_months": {
+          "type": "boolean",
+          "description": "Myocardial infarction within 6 months of screening",
+          "commonly_missing": false
+        },
+        "unstable_angina": {
+          "type": "boolean",
+          "description": "Active or recent unstable angina",
+          "commonly_missing": false
+        },
+        "CVA_TIA_within_6_months": {
+          "type": "boolean",
+          "description": "Cerebrovascular accident or TIA within 6 months",
+          "commonly_missing": false
+        },
+        "uncontrolled_hypertension": {
+          "type": "boolean",
+          "description": "Uncontrolled hypertension (systolic >160 or diastolic >100 despite treatment)",
+          "commonly_missing": false
+        },
+        "heart_block": {
+          "type": "string",
+          "enum": ["none", "first_degree", "second_degree", "third_degree"],
+          "description": "Degree of heart block if present",
+          "commonly_missing": true
+        },
+        "pacemaker": {
+          "type": "boolean",
+          "description": "Whether a pacemaker is in place",
+          "commonly_missing": true
+        },
+        "congenital_long_QT": {
+          "type": "boolean",
+          "description": "Known congenital long QT syndrome",
+          "commonly_missing": true
+        },
+        "prior_LVEF_below_40": {
+          "type": "boolean",
+          "description": "History of LVEF decline to <40% on any prior therapy",
+          "commonly_missing": true
+        },
+        "significant_arrhythmia": {
+          "type": "boolean",
+          "description": "Clinically significant arrhythmia not controlled by medication",
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "prior_therapies": {
+      "type": "object",
+      "description": "History of prior cancer treatments",
+      "properties": {
+        "systemic_therapies": {
+          "type": "array",
+          "description": "List of prior systemic treatments",
+          "items": {
+            "type": "object",
+            "properties": {
+              "drug_name": { "type": "string" },
+              "drug_class": {
+                "type": "string",
+                "description": "e.g., 'anti-HER2', 'checkpoint_inhibitor', 'chemotherapy', 'endocrine', 'TKI'"
+              },
+              "setting": {
+                "type": "string",
+                "enum": ["neoadjuvant", "adjuvant", "advanced_metastatic", "maintenance"]
+              },
+              "start_date": { "type": "string", "format": "date" },
+              "end_date": { "type": "string", "format": "date" },
+              "best_response": { "type": "string" },
+              "reason_stopped": { "type": "string" }
+            }
+          },
+          "commonly_missing": false
+        },
+        "prior_anti_HER2_therapy": {
+          "type": "boolean",
+          "description": "Whether patient received any anti-HER2 directed therapy in any setting",
+          "commonly_missing": false
+        },
+        "prior_checkpoint_inhibitor": {
+          "type": "boolean",
+          "description": "Whether patient received any checkpoint inhibitor therapy",
+          "commonly_missing": false
+        },
+        "cumulative_anthracycline_dose_mg_m2": {
+          "type": "number",
+          "description": "Cumulative doxorubicin-equivalent anthracycline dose (mg/m2)",
+          "commonly_missing": true
+        },
+        "prior_radiation": {
+          "type": "array",
+          "description": "Prior radiation therapy history",
+          "items": {
+            "type": "object",
+            "properties": {
+              "site": { "type": "string" },
+              "end_date": { "type": "string", "format": "date" },
+              "residual_toxicity_grade": { "type": "integer" }
+            }
+          },
+          "commonly_missing": false
+        },
+        "prior_surgery": {
+          "type": "array",
+          "description": "Prior surgical history",
+          "items": {
+            "type": "object",
+            "properties": {
+              "procedure": { "type": "string" },
+              "date": { "type": "string", "format": "date" },
+              "type": { "type": "string", "enum": ["major", "minor"] }
+            }
+          },
+          "commonly_missing": false
+        },
+        "prior_investigational_agent": {
+          "type": "object",
+          "description": "Most recent investigational agent if any",
+          "properties": {
+            "agent_name": { "type": "string" },
+            "last_dose_date": { "type": "string", "format": "date" },
+            "half_life_days": { "type": "number" }
+          },
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "organ_transplant_history": {
+      "type": "object",
+      "properties": {
+        "prior_organ_transplant": {
+          "type": "boolean",
+          "commonly_missing": false
+        },
+        "prior_allogeneic_stem_cell_transplant": {
+          "type": "boolean",
+          "commonly_missing": false
+        },
+        "prior_autologous_stem_cell_transplant": {
+          "type": "boolean",
+          "commonly_missing": false
+        },
+        "transplant_date": {
+          "type": "string",
+          "format": "date",
+          "commonly_missing": true
+        },
+        "active_graft_toxicity": {
+          "type": "boolean",
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "comorbidities": {
+      "type": "object",
+      "description": "Relevant comorbid conditions",
+      "properties": {
+        "autoimmune_disease": {
+          "type": "object",
+          "properties": {
+            "present": { "type": "boolean" },
+            "details": { "type": "string" },
+            "requires_systemic_treatment": { "type": "boolean" },
+            "last_systemic_treatment_date": { "type": "string", "format": "date" }
+          },
+          "commonly_missing": true
+        },
+        "pneumonitis_ILD_history": {
+          "type": "object",
+          "properties": {
+            "present": { "type": "boolean" },
+            "required_steroids": { "type": "boolean" },
+            "is_radiation_related": { "type": "boolean" },
+            "resolved": { "type": "boolean" }
+          },
+          "commonly_missing": true
+        },
+        "CNS_metastases": {
+          "type": "object",
+          "properties": {
+            "present": { "type": "boolean" },
+            "status": {
+              "type": "string",
+              "enum": ["active", "treated_stable", "none"]
+            },
+            "treatment_date": { "type": "string", "format": "date" },
+            "treatment_type": {
+              "type": "string",
+              "enum": ["surgery", "SRS", "WBRT", "combination"]
+            },
+            "post_treatment_MRI_stable": { "type": "boolean" },
+            "leptomeningeal_disease": { "type": "boolean" },
+            "current_dexamethasone_dose_mg_day": { "type": "number" }
+          },
+          "commonly_missing": true
+        },
+        "other_active_malignancy": {
+          "type": "object",
+          "properties": {
+            "present": { "type": "boolean" },
+            "type": { "type": "string" },
+            "diagnosis_date": { "type": "string", "format": "date" },
+            "status": {
+              "type": "string",
+              "enum": ["active_requiring_treatment", "watch_and_wait", "cured", "in_remission"]
+            }
+          },
+          "commonly_missing": true
+        },
+        "gilberts_syndrome": {
+          "type": "boolean",
+          "description": "Known Gilbert syndrome (affects bilirubin threshold interpretation)",
+          "commonly_missing": true
+        },
+        "diabetes_type_1": {
+          "type": "boolean",
+          "commonly_missing": false
+        }
+      }
+    },
+
+    "infectious_disease": {
+      "type": "object",
+      "description": "Infectious disease status",
+      "properties": {
+        "active_infection_requiring_systemic_therapy": {
+          "type": "boolean",
+          "commonly_missing": false
+        },
+        "last_IV_antibiotics_date": {
+          "type": "string",
+          "format": "date",
+          "commonly_missing": true
+        },
+        "HIV": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string", "enum": ["positive", "negative", "unknown"] },
+            "viral_load_detectable": { "type": "boolean" },
+            "CD4_count": { "type": "number" },
+            "on_ART": { "type": "boolean" },
+            "ART_duration_weeks": { "type": "number" }
+          },
+          "commonly_missing": true
+        },
+        "hepatitis_B": {
+          "type": "object",
+          "properties": {
+            "HBsAg": { "type": "string", "enum": ["positive", "negative", "not_tested"] },
+            "anti_HBc": { "type": "string", "enum": ["positive", "negative", "not_tested"] },
+            "HBV_DNA_detectable": { "type": "boolean" },
+            "on_suppressive_therapy": { "type": "boolean" }
+          },
+          "commonly_missing": true
+        },
+        "hepatitis_C": {
+          "type": "object",
+          "properties": {
+            "HCV_RNA_detectable": { "type": "boolean" },
+            "prior_curative_treatment": { "type": "boolean" },
+            "SVR_achieved": { "type": "boolean" }
+          },
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "concomitant_medications": {
+      "type": "object",
+      "description": "Current medications relevant to eligibility",
+      "properties": {
+        "systemic_corticosteroid_dose_mg_day": {
+          "type": "number",
+          "description": "Current prednisone-equivalent daily dose (mg/day). 0 if none.",
+          "commonly_missing": false
+        },
+        "on_anticoagulation": {
+          "type": "boolean",
+          "commonly_missing": false
+        },
+        "anticoagulant_stable_weeks": {
+          "type": "number",
+          "description": "Weeks on current stable anticoagulant dose",
+          "commonly_missing": true
+        },
+        "systemic_immunosuppressants": {
+          "type": "boolean",
+          "description": "Currently on systemic immunosuppressive agents (excluding low-dose corticosteroids)",
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "allergies": {
+      "type": "array",
+      "description": "Known drug allergies and hypersensitivities",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substance": {
+            "type": "string",
+            "description": "e.g., 'polysorbate_80', 'polysorbate_20', 'monoclonal_antibody'"
+          },
+          "severity_grade": { "type": "integer" },
+          "reaction_type": { "type": "string" }
+        }
+      },
+      "commonly_missing": true
+    },
+
+    "vaccination_history": {
+      "type": "object",
+      "properties": {
+        "last_live_vaccine_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of most recent live or live-attenuated vaccine",
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "imaging": {
+      "type": "object",
+      "description": "Relevant imaging findings for eligibility",
+      "properties": {
+        "measurable_disease_RECIST": {
+          "type": "boolean",
+          "description": "Whether patient has measurable disease per RECIST 1.1",
+          "commonly_missing": false
+        },
+        "number_of_measurable_lesions": {
+          "type": "integer",
+          "commonly_missing": false
+        },
+        "bone_only_disease": {
+          "type": "boolean",
+          "commonly_missing": false
+        },
+        "bone_lesion_type": {
+          "type": "string",
+          "enum": ["lytic", "blastic", "mixed", "not_applicable"],
+          "commonly_missing": true
+        },
+        "bone_soft_tissue_component_mm": {
+          "type": "number",
+          "description": "Soft tissue component size of bone lesion (mm)",
+          "commonly_missing": true
+        },
+        "baseline_brain_MRI_date": {
+          "type": "string",
+          "format": "date",
+          "commonly_missing": true
+        },
+        "liver_metastases": {
+          "type": "boolean",
+          "description": "Presence of hepatic metastases (affects AST/ALT threshold interpretation)",
+          "commonly_missing": false
+        }
+      }
+    },
+
+    "resectability": {
+      "type": "object",
+      "description": "Surgical evaluation status (relevant for Stage III NSCLC and locally advanced breast cancer)",
+      "properties": {
+        "evaluated_by_surgeon": {
+          "type": "boolean",
+          "commonly_missing": true
+        },
+        "tumor_board_reviewed": {
+          "type": "boolean",
+          "commonly_missing": true
+        },
+        "deemed_unresectable": {
+          "type": "boolean",
+          "commonly_missing": true
+        },
+        "documentation_available": {
+          "type": "boolean",
+          "commonly_missing": true
+        }
+      }
+    },
+
+    "tissue_availability": {
+      "type": "object",
+      "properties": {
+        "fresh_biopsy_available": { "type": "boolean" },
+        "archival_tissue_available": { "type": "boolean" },
+        "archival_tissue_date": { "type": "string", "format": "date" },
+        "unstained_slides_count": { "type": "integer" },
+        "tissue_block_available": { "type": "boolean" },
+        "intervening_systemic_therapy_since_archival": { "type": "boolean" }
+      },
+      "commonly_missing": true
+    },
+
+    "concurrent_trial_enrollment": {
+      "type": "boolean",
+      "description": "Whether patient is currently enrolled in another interventional clinical trial",
+      "commonly_missing": false
+    },
+
+    "informed_consent": {
+      "type": "boolean",
+      "description": "Whether patient has signed informed consent",
+      "commonly_missing": false
+    }
+  },
+  "required": ["patient_id", "demographics", "diagnosis", "performance_status", "lab_values"]
+}

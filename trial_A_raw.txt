@@ -1,0 +1,107 @@
+PROTOCOL NO. ONC-2024-0471
+A Multicenter, Randomized, Double-Blind, Placebo-Controlled Phase 2 Study to Evaluate the Efficacy and Safety of Investigational Agent NVB-7734 in Combination with Platinum-Based Doublet Chemotherapy in Subjects with Previously Untreated Stage III Non-Small Cell Lung Cancer (NSCLC) Who Are Not Candidates for Surgical Resection
+
+Sponsor: Novarex Biotherapeutics, Inc.
+IND Number: 154,832
+Protocol Version: 3.2 (Amended 14-Mar-2024)
+Original Protocol Date: 22-Aug-2023
+
+CONFIDENTIAL — This document is the property of Novarex Biotherapeutics and is provided to the investigator and site personnel for review under the terms of a confidentiality agreement.
+
+1. BACKGROUND AND RATIONALE
+
+Non-small cell lung cancer accounts for approximately 85% of all lung cancers and remains a leading cause of cancer-related mortality worldwide. NVB-7734 is a first-in-class monoclonal antibody targeting the PD-L2/TIGIT co-inhibitory axis which has demonstrated encouraging preliminary antitumor activity in Phase 1 dose-escalation studies (Protocol ONC-2021-0088). In the dose-expansion cohort, patients with advanced NSCLC showed an overall response rate (ORR) of 28% (95% CI, 16–43%) with a manageable safety profile. Based on these data and the unmet medical need for patients with unresectable Stage III disease, this study is designed to evaluate NVB-7734 in combination with cisplatin/pemetrexed or carboplatin/paclitaxel (investigator's choice) versus placebo plus chemotherapy.
+
+The primary endpoint is progression-free survival (PFS) per RECIST v1.1 as assessed by blinded independent central review (BICR). Key secondary endpoints include overall survival, overall response rate, duration of response, and safety.
+
+2. STUDY OBJECTIVES
+
+Primary: To compare PFS of NVB-7734 + chemotherapy vs placebo + chemotherapy in subjects with unresectable Stage III NSCLC.
+
+Secondary: OS, ORR, DOR, disease control rate (DCR), safety and tolerability. Exploratory objectives include biomarker analyses including PD-L1 expression by IHC (22C3 pharmDx assay, Dako), tumor mutational burden (TMB) by FoundationOne CDx, and circulating tumor DNA (ctDNA) dynamics.
+
+3. STUDY DESIGN
+
+This is a Phase 2, randomized (2:1, NVB-7734:placebo), double-blind, placebo-controlled, multicenter study. Approximately 180 subjects will be enrolled across ~40 sites in the US, EU, and Asia-Pacific. Randomization will be stratified by histology (squamous vs non-squamous), PD-L1 TPS (<1% vs 1-49% vs >=50%), and ECOG performance status (0 vs 1).
+
+Treatment will be administered in 21-day cycles. NVB-7734 800mg or matching placebo IV on Day 1 of each cycle, in combination with investigator's choice of cisplatin 75mg/m2 + pemetrexed 500mg/m2 (non-squamous only) or carboplatin AUC 6 + paclitaxel 200mg/m2. Chemotherapy will be given for a max of 4-6 cycles (at least 4 cycles required unless toxicity mandates earlier discontinuation, up to 6 at investigator discretion), after which subjects will continue on NVB-7734/placebo monotherapy until disease progression, unacceptable toxicity, withdrawal of consent, or up to 24 months from randomization, whichever occurs first.
+
+Tumor assessments by CT or MRI (chest/abdomen/pelvis; brain MRI at baseline and as clinically indicated) will be performed every 6 weeks (±7 days) for the first 48 weeks, then every 9 weeks (±7 days) thereafter.
+
+4. STUDY POPULATION
+
+4.1 Inclusion Criteria
+
+Patients must be aged 18 years or older. Both male and female subjects are eligible. Subjects must have histologically or cytologically confirmed diagnosis of non-small cell lung cancer, Stage IIIA (T4N0-1, T3N2, or T4N2 — per AJCC 8th edition) or Stage IIIB or IIIC disease. Note that patients with Stage IIIA disease who are deemed resectable by the treating thoracic surgeon are NOT eligible and should be referred for surgical evaluation. Patients who were initially evaluated for surgery but determined to be unresectable by a multidisciplinary tumor board are eligible provided documentation is available.
+
+Subjects must have measurable disease per RECIST version 1.1. At least one measurable lesion is required; lesions situated in a previously irradiated area are not considered measurable unless there has been demonstrated progression in the lesion since radiation (and the lesion is not in the brain).
+
+ECOG performance status must be 0 or 1. Patients with ECOG PS 2 may be considered on a case-by-case basis following discussion with the medical monitor if, in the investigator's judgment, the PS 2 status is attributable to the disease burden rather than comorbidities, but this requires prospective approval and will be capped at no more than 10% of total enrollment.
+
+No prior systemic therapy for NSCLC is allowed. Prior adjuvant or neoadjuvant chemotherapy is permitted if completed >12 months prior to the diagnosis of Stage III disease (documentation of the interval is required). Prior radiation therapy to the chest is permitted provided that at least 4 weeks have elapsed since the last fraction, all radiation-related toxicities have resolved to Grade 1 or less (except alopecia), and there is at least one measurable lesion outside the radiation field OR a lesion within the field that has unequivocally progressed.
+
+Subjects must have adequate organ function defined as: absolute neutrophil count >= 1,500/uL; platelet count >= 100,000/uL; hemoglobin >= 9.0 g/dL (transfusions permitted but must be >14 days prior to first dose); serum creatinine =< 1.5x ULN OR creatinine clearance >= 50 mL/min by Cockcroft-Gault formula (for patients receiving cisplatin CrCl must be >= 60 mL/min); AST and ALT =< 2.5x ULN (=< 5x ULN if liver metastases are present, though note — Stage III patients should not have distant metastases, so this provision applies only if there are suspicious but unconfirmed hepatic lesions being followed); total bilirubin =< 1.5x ULN (patients with known Gilbert's syndrome may have bilirubin up to 3.0 mg/dL); INR or PT and aPTT =< 1.5x ULN unless the subject is receiving anticoagulant therapy and coagulation parameters are within the therapeutic range.
+
+Life expectancy of greater than 3 months in the opinion of the investigator.
+
+Female subjects of childbearing potential must have a negative serum or urine pregnancy test within 72 hours prior to the first dose of study treatment. "Childbearing potential" is defined as any woman who has not undergone surgical sterilization (hysterectomy, bilateral oophorectomy, or bilateral salpingectomy) and is not postmenopausal (defined as amenorrhea for >= 12 consecutive months with no alternative medical cause AND FSH level in the postmenopausal range per local lab). Women of childbearing potential and male subjects with partners of childbearing potential must agree to use at least one highly effective method of contraception (per CTFG guidelines) starting at screening and continuing for 6 months after the last dose of study drug.
+
+Subjects must have the ability to understand and sign an IRB/IEC-approved informed consent form. Subjects with cognitive impairment may consent through a legally authorized representative in accordance with local regulations.
+
+Tissue availability: Subjects must provide either a fresh tumor biopsy (preferred) obtained within 60 days of randomization or an archival tumor specimen (formalin-fixed, paraffin-embedded block or at minimum 15 unstained slides) obtained within 3 years, provided no intervening systemic therapy has been administered. If neither is available, enrollment may still proceed with prospective approval from the sponsor's medical monitor, but PD-L1 stratification will default to the "unknown" category.
+
+4.2 Exclusion Criteria
+
+Patients with mixed small-cell and non-small-cell histology, or any component of small-cell lung cancer, are excluded. Patients with known EGFR sensitizing mutations (exon 19 deletion, L858R, or other known sensitizing mutations per NCCN guidelines) or ALK rearrangement are excluded; however note that EGFR/ALK testing is mandatory only for non-squamous histology — for pure squamous histology, testing is recommended but not required (if incidentally found to harbor such alterations they remain excluded). ROS1 rearrangement testing is recommended but results are not required prior to enrollment; subjects with known ROS1 rearrangement should be offered appropriate targeted therapy and are excluded. KRAS G12C mutations do not exclude participation.
+
+Active or prior autoimmune disease requiring systemic treatment within the past 2 years. Replacement therapy (eg, thyroxine, insulin, physiologic corticosteroid replacement for adrenal or pituitary insufficiency) is not considered a form of systemic treatment for purposes of this criterion. Subjects with vitiligo, resolved childhood asthma/atopy, or type 1 diabetes mellitus that is well-controlled on insulin are eligible.
+
+Known active CNS metastases. Note: subjects with previously treated brain metastases may participate if they are clinically stable for at least 4 weeks, have no evidence of new or enlarging brain lesions on MRI performed within 28 days of first dose, and are off systemic corticosteroids (>10mg/day prednisone equivalent) for CNS indications for >=14 days. Leptomeningeal disease is excluded regardless. Subjects with Stage III NSCLC should generally not have CNS metastases but baseline brain imaging is required per Section 3 to rule this out.
+
+Active, known, or suspected autoimmune disease — wait, this was already covered above. Disregard — see Section 4.2 paragraph 2.
+
+History of (non-infectious) pneumonitis/interstitial lung disease that required steroids or current pneumonitis/ILD. History of radiation pneumonitis is not exclusionary provided it has fully resolved without ongoing corticosteroid requirement.
+
+Receipt of a live or live-attenuated vaccine within 30 days of the first dose. Inactivated vaccines (eg, seasonal influenza injection) are permitted.
+
+Known HIV infection with CD4 count <350 cells/uL or detectable viral load within the past 6 months. HIV-positive subjects with adequate immune function on stable ART for >4 weeks with undetectable viral load are permitted. Known active hepatitis B (defined as HBsAg positive and/or detectable HBV DNA) or hepatitis C (detectable HCV RNA). Patients with prior HBV infection (HBsAg negative, anti-HBc positive) may be enrolled if HBV DNA is undetectable and they are willing to undergo monitoring per local guidelines. Patients who have completed curative HCV treatment with undetectable HCV RNA are eligible.
+
+Active infection requiring systemic therapy. Subjects must have completed any course of IV antibiotics >=7 days prior to first dose (oral antibiotics for non-serious infections are permitted).
+
+Significant cardiovascular disease within 6 months of screening, including but not limited to: myocardial infarction, unstable angina, cerebrovascular accident or TIA, NYHA Class III or IV heart failure, or uncontrolled hypertension (systolic >160 mmHg or diastolic >100 mmHg despite optimal medical management). QTcF interval >470 ms (females) or >450 ms (males) at screening. Second- or third-degree heart block unless pacemaker is in place.
+
+Known additional malignancy that is active and/or progressive requiring treatment. Exceptions include basal cell carcinoma of the skin, squamous cell carcinoma of the skin that has been treated curatively, carcinoma in situ (eg cervical, bladder), or any malignancy considered cured with minimal risk of recurrence (eg prostate cancer Gleason =<6 on active surveillance). The sponsor medical monitor should be consulted for borderline cases.
+
+Prior organ or allogeneic stem cell transplant. Prior autologous stem cell transplant does not exclude participation if >6 months have elapsed and there is no evidence of active graft-related toxicity.
+
+Known hypersensitivity to any component of NVB-7734 formulation (histidine, sucrose, polysorbate 80) or severe hypersensitivity (Grade >=3) to any monoclonal antibody.
+
+Concurrent enrollment in another interventional clinical trial. Participation in an observational or registry study is permitted. Subjects who received an investigational agent must have completed a washout period of at least 28 days or 5 half-lives (whichever is shorter) prior to first dose.
+
+5. TREATMENT
+
+[Treatment details omitted for brevity — see Section 3 for dosing schema]
+
+Dose modifications for chemotherapy components will follow standard institutional guidelines or per the respective prescribing information. NVB-7734 does not have dose reductions; in the event of clinically significant immune-related adverse events, NVB-7734 may be held for up to 12 weeks per the immune-related toxicity management guidelines in Appendix D. If the subject cannot restart NVB-7734 within 12 weeks, study treatment must be permanently discontinued.
+
+6. ASSESSMENTS
+
+6.1 Efficacy Assessments — [per Section 3]
+
+6.2 Safety Assessments
+
+Adverse events will be graded per NCI CTCAE v5.0. Labs will be collected on Day 1 of each cycle (hematology, chemistry, thyroid function tests, urinalysis) and on Day 8 of Cycle 1 (hematology only). ECG at screening, Cycle 1 Day 1, Cycle 2 Day 1, then every 3 cycles. Pulmonary function tests (DLCO, FEV1) at screening and as clinically indicated.
+
+6.3 Patient-Reported Outcomes
+
+EORTC QLQ-C30, QLQ-LC13, and EQ-5D-5L will be administered at baseline, Day 1 of every other cycle starting Cycle 3, at end of treatment, and at the 30-day safety follow-up visit.
+
+7. STATISTICAL CONSIDERATIONS
+
+The study is powered at 80% to detect an HR of 0.60 for PFS (corresponding to a median PFS improvement from 7.0 to 11.7 months) using a one-sided alpha of 0.025. With an assumed enrollment period of 18 months and minimum follow-up of 6 months, approximately 120 PFS events are required. An interim analysis for futility (non-binding) is planned after 60% of events have occurred.
+
+--- END OF PROTOCOL SYNOPSIS ---
+
+APPENDICES TO FOLLOW (A: Schedule of Assessments; B: ECOG Performance Status Scale; C: RECIST v1.1 Summary; D: Immune-Related Toxicity Management Guidelines; E: Prohibited and Restricted Concomitant Medications; F: Pregnancy Reporting; G: New York Heart Association Classification)
+
+Note to investigators: Please refer any patient screening questions to the medical monitor at medicalmonitor@novarexbio.com or via the sponsor hotline. Specific questions about eligibility of patients with borderline organ function, prior malignancy history, or unusual histologic subtypes are encouraged and will be addressed within 48 hours.

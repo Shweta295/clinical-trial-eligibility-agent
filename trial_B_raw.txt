@@ -1,0 +1,128 @@
+VIVANTRA-HER2 STUDY
+Protocol ID: BRC-VT-221
+A Phase 2, Open-Label, Single-Arm Study Evaluating the Efficacy and Safety of Vivantra (VT-4019) in Combination with Docetaxel in Patients with HER2-Positive Locally Advanced or Metastatic Breast Cancer Who Have Not Received Prior Anti-HER2 Directed Therapy
+
+Protocol Version 2.1, dated 07-Nov-2023
+Amendment 1 (09-Feb-2024): Clarified tissue requirements, expanded washout language
+Sponsor: Celanova Therapeutics, Ltd. (Dublin, Ireland)
+CRO: Paragon Clinical Research Organization
+
+SECTION 1 — INTRODUCTION & SCIENTIFIC RATIONALE
+
+HER2-positive breast cancer, characterized by overexpression or amplification of the human epidermal growth factor receptor 2, accounts for approximately 15-20% of all invasive breast cancers. While the introduction of anti-HER2 agents (trastuzumab, pertuzumab, T-DM1, trastuzumab deruxtecan) has transformed outcomes for this disease subtype, a significant proportion of patients ultimately experience disease progression. VT-4019 (trade name Vivantra) is a next-generation bispecific antibody targeting both HER2 and HER3 with enhanced ADCC activity through an afucosylated Fc region. Preclinical xenograft models demonstrated superior tumor regression compared to trastuzumab + pertuzumab in HER2-amplified models (see IB Section 4.2.3). First-in-human data from Study BRC-VT-101 showed an ORR of 41% in heavily pretreated HER2+ MBC patients, with a favorable safety profile dominated by manageable infusion reactions and diarrhea.
+
+This study aims to evaluate VT-4019 + docetaxel as first-line therapy in patients who have NOT received prior anti-HER2 treatment in the advanced/metastatic setting.
+
+SECTION 2 — STUDY OBJECTIVES AND ENDPOINTS
+
+Primary objective: To evaluate ORR (complete response + partial response) per RECIST 1.1 as assessed by investigator review.
+
+Secondary objectives: PFS, OS, clinical benefit rate (CR + PR + SD >= 24 weeks), safety/tolerability, pharmacokinetics (trough levels of VT-4019), and immunogenicity (anti-drug antibodies).
+
+Exploratory: HER2 expression heterogeneity by spatial transcriptomics, HER3 co-expression patterns, ctDNA kinetics, patient-reported outcomes (FACT-B, PRO-CTCAE).
+
+SECTION 3 — STUDY DESIGN OVERVIEW
+
+Open-label, single-arm, multicenter. Target enrollment: 90 patients at approximately 25 sites in Europe and North America.
+
+Treatment: VT-4019 15mg/kg IV every 3 weeks + docetaxel 75mg/m2 IV every 3 weeks. Docetaxel for minimum 6 cycles unless toxicity; VT-4019 until progression, intolerable toxicity, or 18 months maximum.
+
+Imaging (CT chest/abdomen/pelvis, bone scan) at baseline, then q8 weeks for 6 months, q12 weeks thereafter. Brain MRI at baseline for all patients, repeat only if clinically indicated. Echocardiogram or MUGA scan at baseline, q12 weeks during treatment, and at end of treatment.
+
+SECTION 4 — PATIENT SELECTION
+
+4.1. Who Can Participate (Inclusion)
+
+Eligible patients must be adults, defined as age >= 18 years (or age of majority in their country, whichever is higher). Male patients with HER2+ breast cancer are eligible though expected to represent a small minority of enrollees.
+
+The diagnosis must be confirmed HER2-positive by local laboratory testing. HER2 positivity is defined as IHC 3+ or IHC 2+ with confirmatory ISH (FISH or CISH) demonstrating HER2/CEP17 ratio >= 2.0 or average HER2 gene copy number >= 6.0 signals/cell per ASCO/CAP 2018 guidelines. Central confirmation of HER2 status will be performed retrospectively but is not required prior to enrollment. However if local results are IHC 2+/ISH equivocal (ratio 1.8–2.2 or copy number 4.0–6.0), central testing IS required before the patient can receive study treatment.
+
+Disease must be locally advanced (not amenable to curative surgery or radiation) or metastatic (Stage IV). For locally advanced disease, the patient must have been evaluated by a surgical oncologist and/or radiation oncologist and determined not to be a candidate for curative-intent local therapy; documentation of this assessment should be in the patient's chart. De novo metastatic presentation is acceptable.
+
+This is the important part — patients must NOT have received any prior anti-HER2 directed therapy in ANY setting. This means no prior trastuzumab, pertuzumab, T-DM1, trastuzumab deruxtecan, lapatinib, neratinib, tucatinib, margetuximab, or any other HER2-targeted agent whether given as adjuvant, neoadjuvant, or for advanced disease. The rationale is to study VT-4019 in a truly HER2-treatment-naive population. NOTE HOWEVER: patients who received trastuzumab as part of adjuvant/neoadjuvant therapy for EARLY-STAGE breast cancer are excluded UNLESS the last dose was administered more than 12 months before the documentation of advanced/metastatic disease AND the disease recurrence is not considered refractory to anti-HER2 therapy (ie, recurrence did not occur during or within 6 months of completing adjuvant/neoadjuvant trastuzumab). The medical monitor should be contacted for any ambiguous situations. (Amendment 1 clarification: this 12-month washout applies specifically to trastuzumab and/or pertuzumab given in the early-stage setting; any prior T-DM1, T-DXd, or small molecule HER2 TKI in any setting remains exclusionary with no washout provision.)
+
+Prior systemic chemotherapy for advanced/metastatic breast cancer is not allowed. Prior hormonal therapy for HR+/HER2+ disease in the advanced setting IS allowed if it was given as a single agent without concurrent chemotherapy or anti-HER2 therapy, and must be discontinued at least 7 days before first dose. Prior chemotherapy in the adjuvant/neoadjuvant setting is permitted if completed >= 6 months before enrollment (all toxicities from prior chemo must have resolved to Grade 1 or baseline except alopecia and peripheral neuropathy which must be =< Grade 2).
+
+Patients need to have at least one measurable lesion per RECIST 1.1. Bone-only disease is acceptable ONLY if there is at least one lytic or mixed lytic-blastic lesion with a measurable soft-tissue component >= 10mm. Patients with exclusively blastic bone disease are not eligible.
+
+ECOG PS 0-1 (see Appendix B). Unlike some studies we will NOT be entertaining PS 2 patients even with medical monitor approval due to the docetaxel backbone.
+
+Adequate organ function, to be assessed within 14 days of first dose:
+- ANC >= 1500/mm3
+- Platelets >= 100,000/mm3
+- Hemoglobin >= 9 g/dL (no transfusion within 7 days)
+- Serum creatinine =< 1.5 x ULN OR calculated CrCl >= 50 mL/min (Cockcroft-Gault)
+- Total bilirubin =< ULN (patients with documented Gilbert syndrome: =< 2.0 x ULN)
+- AST/ALT =< 2.5 x ULN; with hepatic metastases =< 5 x ULN
+- LVEF >= 50% by echocardiogram or MUGA (must be performed within 28 days of first dose; if echo and MUGA give discrepant results, use the echo value)
+
+Patients on anticoagulation are eligible provided they are on a stable dose for >= 2 weeks and INR/aPTT are within therapeutic range.
+
+Women of reproductive potential — the usual language applies (negative pregnancy test within 72 hrs, agreement to use effective contraception during treatment and for 7 months after last dose of VT-4019 or 6 months after last dose of docetaxel, whichever is later). Men with female partners of reproductive potential must use barrier contraception during treatment and for 4 months after last dose.
+
+Signed informed consent. For patients in France, affiliation to the social security system (or equivalent) is also required per local regulation.
+
+Availability of tumor tissue: Patients must be willing to undergo a fresh biopsy of accessible disease if archival tissue is unavailable. Archival tissue is acceptable if obtained within 6 months of enrollment and no systemic anticancer therapy was given in the interim. A minimum of 10 unstained FFPE slides or a tissue block is required. Patients who cannot provide tissue due to inaccessible disease AND have no qualifying archival tissue may be enrolled with sponsor approval but will not be evaluable for exploratory biomarker endpoints.
+
+4.2. Who Should Not Participate (Exclusion)
+
+Patients with HER2-low disease (IHC 1+ or IHC 2+/ISH negative) are not eligible. (Clarification per Amendment 1: IHC 0 is also excluded, obviously.)
+
+Known ER+ and/or PR+ disease that has not been treated with at least one line of endocrine therapy, unless there is a documented contraindication to endocrine therapy or rapidly progressive visceral crisis requiring immediate chemotherapy. This criterion is per ASCO/ESMO guidelines recommending endocrine-based first-line therapy for HR+/HER2+ patients with indolent disease. The study does not mandate endocrine therapy but requires clinical justification if it was not given.
+
+Active CNS metastases. Patients with treated and stable brain metastases are eligible if: (a) definitive treatment (surgery, SRS, or WBRT) was completed >= 4 weeks prior to first dose, (b) there is no evidence of progression on post-treatment brain MRI, and (c) the patient has been off dexamethasone or equivalent for >= 2 weeks OR is on a stable dose of =< 2mg/day dexamethasone (or equivalent). Leptomeningeal disease is excluded.
+
+Patients with inflammatory breast cancer (T4d) may be enrolled IF they meet all other criteria and have measurable disease beyond the skin involvement. Purely inflammatory presentation without measurable lesions is excluded. (Note: this was a point of confusion in the original protocol and was clarified in Amendment 1.)
+
+Any significant cardiac history or risk: documented CHF (NYHA Class >= II), myocardial infarction within 6 months, unstable angina, clinically significant arrhythmia not controlled by medication, congenital long QT syndrome. Additionally, any patient with a history of LVEF decline to <40% on any prior therapy (including non-HER2 therapy) is excluded due to the known cardiac risk profile of HER2-targeted agents. QTcF > 480ms at screening is exclusionary.
+
+Prior anthracycline exposure: patients who received cumulative doxorubicin-equivalent doses exceeding 300 mg/m2 are excluded (calculate equivalent doses using the table in Appendix E; epirubicin factor = 0.5, mitoxantrone factor = 4.0, idarubicin factor = 5.0). Patients who received anthracyclines but are within this cumulative limit are eligible.
+
+Known additional active malignancy. Adequately treated non-melanoma skin cancer, CIS of the cervix, DCIS treated with curative intent, or any malignancy diagnosed > 3 years ago without recurrence are exceptions. Concurrent low-grade malignancies (eg, indolent lymphoma on watch-and-wait) should be discussed with the medical monitor.
+
+Active autoimmune disease — actually this is less relevant for this study since VT-4019 is not an immune checkpoint inhibitor. However, patients requiring systemic immunosuppression (>10mg/day prednisone or equivalent) are excluded because of potential interference with ADCC, which is a key mechanism of action. Inhaled or topical steroids and adrenal replacement doses are permitted.
+
+Active serious infection requiring parenteral antibiotics or antifungals within 14 days of first dose. Known HIV, HBV, or HCV infection is not exclusionary provided the infection is adequately controlled (HIV: undetectable VL on ART with CD4 >200; HBV: on suppressive therapy with undetectable DNA; HCV: completed treatment with SVR or undetectable RNA). However, the investigator should consider potential drug-drug interactions with antivirals and docetaxel.
+
+Hypersensitivity to any component of VT-4019 or docetaxel, or to drugs formulated with polysorbate 80. History of severe (Grade >=3) infusion-related reaction to any monoclonal antibody therapy.
+
+Pregnant or breastfeeding women. (Self-explanatory, but documenting per ICH E6 requirements.)
+
+Major surgery within 4 weeks of first dose, or planned major surgery during the study period. Minor procedures (port placement, core biopsy, dental procedures) are not exclusionary if performed >= 7 days prior.
+
+Prior radiation therapy: allowed if completed >= 2 weeks prior to first dose and all radiation-related toxicities resolved to =< Grade 1 (except alopecia). Radiation must not have been administered to the only target lesion unless that lesion has subsequently progressed.
+
+Concurrent participation in another interventional clinical trial. Prior investigational agent must be discontinued >= 28 days or 5 half-lives (whichever is shorter, but minimum 14 days) before first dose.
+
+Known allergy to any excipient of VT-4019 formulation (L-histidine, L-histidine HCl monohydrate, alpha-alpha-trehalose dihydrate, polysorbate 20, and water for injection). Note this is different from the polysorbate 80 used in docetaxel — patients allergic to polysorbate 80 specifically (not 20) may still receive VT-4019 but cannot receive docetaxel.
+
+Patients with known dihydropyrimidine dehydrogenase (DPD) deficiency — NOTE: this criterion is a holdover from a prior version of the protocol that included capecitabine as an option. Docetaxel is not affected by DPD status. This criterion will be removed in the next protocol amendment. Do NOT screen patients for DPD deficiency as part of this study.
+
+SECTION 5 — TREATMENT ADMINISTRATION
+
+[See Section 3 for overview. Detailed infusion guidelines, premedication requirements (dexamethasone 8mg BID x3 days starting Day -1 for docetaxel; diphenhydramine 50mg IV and acetaminophen 650mg PO prior to VT-4019 infusion Cycles 1-3, then at investigator discretion for subsequent cycles), dose modification tables, and management of infusion reactions are provided in the Pharmacy Manual.]
+
+Dose reductions for docetaxel: Level -1: 60 mg/m2; Level -2: 45 mg/m2. If further reduction needed, docetaxel should be discontinued and VT-4019 monotherapy may continue. VT-4019 has no dose reduction provisions; hold for Grade >= 3 treatment-related AEs and resume at the same dose when resolved to Grade =< 1.
+
+SECTION 6 — EFFICACY AND SAFETY ASSESSMENTS
+
+Tumor response will be assessed by the investigator per RECIST v1.1. All scans will be submitted for retrospective central review. Patients who discontinue study treatment prior to documented progression should continue imaging assessments per schedule until progression, new anticancer therapy, withdrawal of consent, or death.
+
+Adverse events per CTCAE v5.0. Special AEs of interest: cardiac events (any LVEF decline, symptomatic CHF), infusion-related reactions, diarrhea >= Grade 2, hepatotoxicity (ALT or AST >3x ULN or bilirubin >2x ULN), neutropenia (febrile or Grade 4), pneumonitis (any grade).
+
+SECTION 7 — STATISTICAL PLAN
+
+This is a single-arm study with a target ORR of 55% vs a historical control rate of 35% (based on docetaxel monotherapy). Using a one-sided exact binomial test at alpha = 0.025, a sample size of 80 evaluable patients provides 90% power. Assuming ~10% non-evaluable, enrollment target is 90 patients. An interim futility analysis will be performed after 30 evaluable patients; if the observed ORR is <25%, enrollment may be paused pending DSMB review.
+
+--- END ---
+
+APPENDICES:
+A — Schedule of Events (separate document, ref BRC-VT-221-AppA-v2.1)
+B — ECOG Performance Status Scale
+C — RECIST 1.1 Summary
+D — Cardiac Monitoring and Management Guidelines
+E — Anthracycline Cumulative Dose Equivalence Table
+F — List of Prohibited Concomitant Medications (strong CYP3A4 inhibitors/inducers while on docetaxel)
+G — Pregnancy Reporting
+
+Investigator queries re: eligibility should be directed to the Celanova Medical Affairs team at medicalaffairs@celanova-tx.com. For urgent safety questions, contact the 24-hr medical monitor line at +353-1-XXX-XXXX.

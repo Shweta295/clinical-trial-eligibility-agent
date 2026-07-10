@@ -1,0 +1,86 @@
+CLINICAL NOTE — TRIAL SCREENING EVALUATION
+
+Date: 07/01/2026
+Provider: Dr. Sandra Chen, Thoracic Oncology
+Site: Memorial Cancer Associates, Philadelphia, PA
+
+Patient: Michael T. Okonkwo
+MRN: 6628413
+DOB: 01/30/1960 (Age 66)
+Sex: Male
+
+CLINICAL SUMMARY:
+Mr. Okonkwo is a 66-year-old male presenting with biopsy-confirmed Stage IIIB (T4N2M0) non-small cell lung cancer, adenocarcinoma subtype. He was diagnosed 5 weeks ago after workup for hemoptysis and progressive dyspnea. CT and PET imaging confirm a 5.7 cm RLL mass with bilateral mediastinal adenopathy (stations 4R, 7, 4L). No distant metastases on CT chest/abdomen/pelvis. Brain MRI on 06/15/2026 showed two small enhancing lesions in the right parietal lobe (4mm and 6mm), treated with stereotactic radiosurgery (SRS) on 06/20/2026. Post-SRS MRI on 06/28/2026 shows no residual enhancement, no edema, no new lesions. He was briefly on dexamethasone 4mg daily post-SRS but was tapered off completely as of 06/25/2026 (6 days ago). He is currently on no corticosteroids.
+
+The tumor board reviewed his case on 06/18/2026 and determined the thoracic disease is unresectable given the bilateral N2 involvement.
+
+MOLECULAR TESTING (FoundationOne CDx, resulted 06/22/2026):
+- EGFR: Wild-type
+- ALK: Not detected
+- ROS1: Not detected
+- KRAS: G12D mutation (not G12C; does not exclude per ONC-2024-0471)
+- PD-L1 TPS (22C3): 8%
+
+ECOG PERFORMANCE STATUS: He is up and about most of the day but noticeably fatigued. He can do light household tasks but his wife helps with grocery shopping and errands. He stopped driving about two weeks ago because he "doesn't feel sharp enough." I would classify him as ECOG PS 2, which I believe is primarily related to his disease burden (large primary tumor causing dyspnea, weight loss of 18 lbs over 2 months) rather than his underlying comorbidities. He was PS 0-1 as recently as three months ago per his PCP notes.
+
+PMH:
+- Type 2 diabetes, A1c 7.8 on metformin + glipizide
+- Hypertension on amlodipine 10mg
+- Remote history of Graves' disease treated with radioactive iodine ablation in 2005, now hypothyroid on levothyroxine 112 mcg — has been euthyroid for >15 years, no active autoimmune thyroid disease
+- Mild COPD, uses tiotropium inhaler
+- BPH on tamsulosin
+- No prior malignancy
+- No organ transplant
+
+PRIOR ONCOLOGIC THERAPY:
+No prior chemotherapy, immunotherapy, targeted therapy, or investigational agents for any indication. The SRS to brain lesions on 06/20/2026 is his only prior oncologic treatment.
+
+LABS (drawn 06/28/2026):
+- WBC: 9.4 x10^3/uL
+- ANC: 5,200/uL
+- Platelets: 174,000/uL
+- Hemoglobin: 10.2 g/dL (borderline — was 10.8 two weeks ago, trending down. No transfusions.)
+- Serum creatinine: 1.38 mg/dL (ULN 1.20). Cockcroft-Gault CrCl: 54 mL/min. This is above the 50 mL/min general threshold but his creatinine is 1.15x ULN. However if cisplatin-based regimen is chosen, the 60 mL/min requirement would NOT be met. Carboplatin-based regimen would be acceptable.
+- AST: 31 U/L (ULN 40)
+- ALT: 38 U/L (ULN 41)
+- Total bilirubin: 1.1 mg/dL (ULN 1.2)
+- INR: 1.2
+- aPTT: 30 sec
+- ECG: NSR, rate 78. QTcF 438 ms. No conduction abnormality.
+
+INFECTIOUS DISEASE:
+- HIV: Negative
+- HBsAg: Negative
+- Anti-HBc: Positive (prior exposure)
+- HBV DNA: Undetectable
+- HCV Ab: Negative
+- No active infections
+
+ALLERGIES: NKDA. No known allergy to polysorbate 80 or monoclonal antibodies. No prior infusion reactions.
+
+MEDICATIONS:
+Metformin 1000mg BID, glipizide 5mg daily, amlodipine 10mg daily, levothyroxine 112mcg daily, tiotropium inhaler daily, tamsulosin 0.4mg daily. No corticosteroids. No anticoagulants. No immunosuppressants.
+
+TISSUE: Biopsy from 05/28/2026 — FFPE block available, obtained within 60 days. PD-L1 already completed. Adequate slides remaining.
+
+VACCINATION: Flu shot (inactivated) October 2025, Shingrix 2024. No live vaccines.
+
+NOT enrolled in any other clinical trial. Has signed screening consent.
+
+ASSESSMENT:
+This patient presents several borderline eligibility questions for ONC-2024-0471:
+
+1. ECOG PS 2 — The protocol allows PS 2 case-by-case if attributable to disease burden (which I believe this is), but requires prospective medical monitor approval and is capped at 10% enrollment.
+
+2. Brain metastases — Treated with SRS 11 days ago. Protocol requires treated brain mets to be "clinically stable for at least 4 weeks" post-treatment. As of today, only 11 days have elapsed since SRS. However, post-SRS imaging at 8 days shows no residual disease, and he is off dexamethasone for 6 days (protocol requires >=14 days off >10mg/day prednisone equivalent; his max was 4mg/day dexamethasone which is ~26mg prednisone equivalent, but he is now completely off).
+
+3. Creatinine clearance 54 mL/min — Meets the general >=50 threshold but would not qualify for cisplatin (requires >=60). Carboplatin/paclitaxel is an available option per protocol.
+
+4. Prior HBV exposure (anti-HBc positive, HBsAg negative, HBV DNA undetectable) — Protocol permits this with monitoring.
+
+5. Graves' disease history — Treated definitively >20 years ago, now hypothyroid on replacement. Protocol excludes "autoimmune disease requiring systemic treatment within past 2 years" but exempts replacement therapy.
+
+Requesting formal eligibility review and medical monitor consultation.
+
+Dr. Sandra Chen, MD
+Thoracic Oncology

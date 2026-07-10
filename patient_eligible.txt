@@ -1,0 +1,129 @@
+CLINICAL NOTE — ONCOLOGY CONSULTATION
+
+Patient: Sarah A. Mitchell
+MRN: 20260042
+DOB: 1968-03-15 (Age: 58)
+Sex: Female
+Date of Visit: 2026-06-28
+Provider: Dr. James Whitfield, MD — Thoracic Oncology
+
+CHIEF COMPLAINT:
+Newly diagnosed Stage IIIB non-small cell lung cancer, referred for discussion of systemic therapy options.
+
+HISTORY OF PRESENT ILLNESS:
+Ms. Mitchell is a 58-year-old woman who presented with persistent cough, dyspnea on exertion, and unintentional weight loss of approximately 12 lbs over 3 months. CT chest on 2026-05-20 revealed a 4.8 cm right upper lobe mass with ipsilateral mediastinal lymphadenopathy (stations 4R, 7, and subcarinal). PET-CT on 2026-05-28 showed FDG-avid right upper lobe mass (SUVmax 14.2) and mediastinal lymph nodes (SUVmax 8.6). No distant metastatic disease was identified. Brain MRI on 2026-06-02 was negative for intracranial metastases.
+
+CT-guided core needle biopsy of the right upper lobe mass was performed on 2026-06-05. Pathology confirmed adenocarcinoma of the lung, consistent with primary pulmonary origin. Immunohistochemistry: TTF-1 positive, Napsin A positive, CK7 positive, CK20 negative, p40 negative. No small-cell component identified.
+
+Staging: Stage IIIB (T4N2M0, AJCC 8th edition). The primary tumor invades the mediastinum and involves multiple ipsilateral mediastinal lymph node stations. Case was reviewed by the multidisciplinary tumor board on 2026-06-12. The thoracic surgery team determined the disease is UNRESECTABLE due to extensive mediastinal invasion and multi-station N2 involvement. Patient is a candidate for definitive concurrent chemoradiation or systemic therapy clinical trial.
+
+Measurable disease: Primary right upper lobe mass measuring 4.8 x 3.2 cm per RECIST v1.1 criteria (target lesion). Mediastinal lymph node station 7 measuring 2.4 cm (target lesion).
+
+MOLECULAR AND BIOMARKER TESTING:
+- EGFR mutation: NEGATIVE (wild-type; tested via cobas EGFR Mutation Test v2)
+- ALK rearrangement: NEGATIVE (tested via Ventana ALK D5F3 IHC and confirmed by FISH)
+- ROS1 rearrangement: NEGATIVE (tested via FISH)
+- PD-L1 TPS: 45% (22C3 pharmDx assay)
+- KRAS G12C: Positive
+- HER2: Not amplified
+
+TUMOR TISSUE:
+Fresh core biopsy obtained on 2026-06-05 (within 60 days of anticipated randomization). FFPE block with adequate tissue available for correlative studies. 20 unstained slides prepared and available.
+
+PAST MEDICAL HISTORY:
+- Hypothyroidism, well-controlled on levothyroxine 75 mcg daily
+- Mild osteoarthritis of the knees
+- No history of autoimmune disease
+- No history of pneumonitis or interstitial lung disease
+- No history of organ transplant or stem cell transplant
+- No history of additional malignancies
+- No known cardiovascular disease — no MI, stroke, TIA, or heart failure
+- No known drug allergies or hypersensitivities. Specifically no allergy to histidine, sucrose, polysorbate 80, or any monoclonal antibody. No history of Grade 3 or higher hypersensitivity reactions
+- HIV: Negative (tested 2026-06-10)
+- Hepatitis B surface antigen: Negative
+- Hepatitis C antibody: Negative
+- No active infections
+- VACCINATION HISTORY: Patient has NOT received any live or live-attenuated vaccine in the past 12 months. Last live vaccine was MMR booster in 2019. Most recent vaccine was inactivated influenza vaccine on 2025-10-15. Confirmed: no live vaccines within 30 days of anticipated first dose
+- Not enrolled in any other clinical trial
+
+SURGICAL HISTORY:
+- Laparoscopic cholecystectomy (2018)
+- No thoracic surgery
+
+PRIOR CANCER THERAPY:
+- No prior systemic therapy for NSCLC
+- No prior chemotherapy, immunotherapy, or targeted therapy
+- No prior radiation therapy to the chest or any site
+
+MEDICATIONS:
+- Levothyroxine 75 mcg PO daily
+- Acetaminophen 500 mg PRN for knee pain
+- No anticoagulants
+- No corticosteroids
+- No immunosuppressants
+
+SOCIAL HISTORY:
+- Former smoker: 25 pack-years, quit 4 years ago
+- No alcohol abuse
+- Lives with husband, independent in ADLs
+- Works part-time as a librarian
+
+FUNCTIONAL STATUS:
+- ECOG Performance Status: 1
+- KPS: 80%
+- Ambulatory and capable of all self-care, limited in physically strenuous activity
+- Life expectancy estimated >12 months per clinical assessment
+
+PHYSICAL EXAMINATION:
+- Vitals: BP 128/76 mmHg, HR 78 bpm, RR 16, Temp 36.8°C, SpO2 96% on room air
+- Weight: 68 kg, Height: 165 cm, BMI: 25.0
+- General: Well-appearing woman in no acute distress
+- Lungs: Decreased breath sounds right upper lobe, no wheezes or crackles
+- Heart: Regular rate and rhythm, no murmurs, S1/S2 normal
+- Abdomen: Soft, non-tender, no hepatomegaly
+- Extremities: No edema, no cyanosis
+- Neuro: Alert and oriented, no focal deficits
+
+LABORATORY DATA (2026-06-25):
+- WBC: 7,200/uL
+- Absolute Neutrophil Count (ANC): 4,800/uL (normal)
+- Platelets: 245,000/uL
+- Hemoglobin: 12.8 g/dL (no transfusions)
+- Serum Creatinine: 0.82 mg/dL (within normal limits)
+- Creatinine Clearance (Cockcroft-Gault): 88 mL/min
+- AST: 22 U/L (within normal limits)
+- ALT: 18 U/L (within normal limits)
+- Total Bilirubin: 0.6 mg/dL (within normal limits)
+- INR: 1.0
+- PT: 12.1 seconds (normal)
+- aPTT: 28.4 seconds (normal)
+- Albumin: 3.9 g/dL
+
+CARDIAC ASSESSMENT:
+- ECG (2026-06-25): Normal sinus rhythm, rate 76 bpm
+- QTcF interval: 412 ms (normal for female; well below 470 ms threshold)
+- No heart block, no arrhythmias
+- No history of cardiac conduction abnormalities
+- No pacemaker
+
+REPRODUCTIVE STATUS:
+- Postmenopausal (last menstrual period 2020). Not of childbearing potential.
+- Pregnancy test: Not required (postmenopausal >12 months)
+
+CONTRACEPTION:
+- Not applicable (postmenopausal)
+
+ASSESSMENT AND PLAN:
+Ms. Mitchell is a 58-year-old postmenopausal woman with newly diagnosed Stage IIIB (T4N2M0) adenocarcinoma of the lung, determined unresectable by multidisciplinary tumor board. She has ECOG PS 1, adequate organ function, no actionable driver mutations (EGFR wild-type, ALK negative, ROS1 negative), and PD-L1 TPS 45%. She has no prior systemic therapy, no relevant comorbidities, and excellent lab values.
+
+She is an excellent candidate for clinical trial ONC-2024-0471 evaluating NVB-7734 in combination with platinum-based doublet chemotherapy for previously untreated unresectable Stage III NSCLC.
+
+Plan:
+1. Discuss clinical trial enrollment with patient and family
+2. Obtain informed consent
+3. Schedule baseline imaging within 28 days of first dose
+4. Plan randomization and treatment initiation
+
+Dr. James Whitfield, MD
+Board Certified, Medical Oncology
+Thoracic Oncology Division

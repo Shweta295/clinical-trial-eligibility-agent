@@ -3,9 +3,12 @@ import os
 from datetime import datetime, timezone
 
 from dotenv import load_dotenv
-from sqlalchemy import create_engine, Column, String, Text, DateTime, ForeignKey, Integer
+from sqlalchemy import create_engine, Column, String, Text, DateTime, ForeignKey, Integer, text
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import declarative_base, sessionmaker, Session
+from pgvector.sqlalchemy import Vector
+
+from config import VOYAGE_EMBEDDING_DIM
 
 load_dotenv()
 
@@ -35,6 +38,7 @@ class Trial(Base):
     name = Column(Text, nullable=False)
     phase = Column(String, nullable=False)
     data = Column(JSONB, nullable=False)
+    embedding = Column(Vector(VOYAGE_EMBEDDING_DIM), nullable=True)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
 
 
@@ -68,6 +72,12 @@ class Result(Base):
 # ── Table Creation ──────────────────────────────────────────────────────────
 
 def init_db():
+    with engine.connect() as conn:
+        conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+        conn.execute(text(
+            f"ALTER TABLE trials ADD COLUMN IF NOT EXISTS embedding vector({VOYAGE_EMBEDDING_DIM})"
+        ))
+        conn.commit()
     Base.metadata.create_all(engine)
 
 

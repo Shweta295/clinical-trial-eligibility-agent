@@ -1,0 +1,2552 @@
+[
+  {
+    "trial_id": "ONC-2024-0471",
+    "trial_name": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Phase 2 Study to Evaluate the Efficacy and Safety of Investigational Agent NVB-7734 in Combination with Platinum-Based Doublet Chemotherapy in Subjects with Previously Untreated Stage III Non-Small Cell Lung Cancer (NSCLC) Who Are Not Candidates for Surgical Resection",
+    "phase": "Phase 2",
+    "condition": "Non-Small Cell Lung Cancer (NSCLC)",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Patient must be aged 18 years or older.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically or cytologically confirmed diagnosis of NSCLC, Stage IIIA (T4N0-1, T3N2, or T4N2 per AJCC 8th edition), Stage IIIB, or Stage IIIC.",
+        "field_required": "diagnosis_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stage IIIA patients deemed resectable by the treating thoracic surgeon are not eligible; patients initially evaluated for surgery but determined unresectable by a multidisciplinary tumor board are eligible with documentation.",
+        "field_required": "surgical_resectability_status",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Subject must have at least one measurable lesion per RECIST v1.1; previously irradiated lesions are not considered measurable unless demonstrated progression since radiation (and not in brain).",
+        "field_required": "tumor_measurability",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ECOG performance status must be 0 or 1.",
+        "field_required": "ECOG_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Patients with ECOG PS 2 may be considered case-by-case with medical monitor discussion and approval if PS2 is judged attributable to disease burden rather than comorbidities, capped at 10% of enrollment.",
+        "field_required": "ECOG_performance_status",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "No prior systemic therapy for NSCLC allowed, except prior adjuvant/neoadjuvant chemotherapy completed more than 12 months prior to Stage III diagnosis with documented interval.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior radiation therapy to the chest is permitted if at least 4 weeks have elapsed since last fraction, toxicities resolved to Grade 1 or less (except alopecia), and there is a measurable lesion outside the radiation field or a lesion within the field that has unequivocally progressed.",
+        "field_required": "prior_radiation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count must be >= 1,500/uL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Platelet count must be >= 100,000/uL.",
+        "field_required": "lab_platelets",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin must be >= 9.0 g/dL; transfusions permitted if administered more than 14 days prior to first dose.",
+        "field_required": "lab_hemoglobin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN or creatinine clearance >= 50 mL/min (Cockcroft-Gault); patients receiving cisplatin must have CrCl >= 60 mL/min.",
+        "field_required": "lab_creatinine_or_CrCl",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST and ALT <= 2.5x ULN, or <= 5x ULN if suspicious but unconfirmed hepatic lesions are being followed.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Total bilirubin <= 1.5x ULN; patients with known Gilbert's syndrome may have bilirubin up to 3.0 mg/dL.",
+        "field_required": "lab_bilirubin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "INR or PT and aPTT <= 1.5x ULN, unless subject is on anticoagulant therapy with coagulation parameters within therapeutic range.",
+        "field_required": "lab_coagulation",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Life expectancy of greater than 3 months in the opinion of the investigator.",
+        "field_required": "life_expectancy",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Female subjects of childbearing potential must have a negative serum or urine pregnancy test within 72 hours prior to first dose.",
+        "field_required": "pregnancy_test",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Women of childbearing potential and male subjects with partners of childbearing potential must agree to use at least one highly effective method of contraception from screening through 6 months after last dose.",
+        "field_required": "contraception_use",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Subject must provide a fresh tumor biopsy obtained within 60 days of randomization (preferred) or an archival tumor specimen (FFPE block or at least 15 unstained slides) obtained within 3 years with no intervening systemic therapy; if neither available, enrollment may proceed with sponsor medical monitor approval and PD-L1 stratification defaults to unknown.",
+        "field_required": "tumor_tissue_availability",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Mixed small-cell and non-small-cell histology, or any component of small-cell lung cancer.",
+        "field_required": "histology",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known EGFR sensitizing mutation (exon 19 deletion, L858R, or other known sensitizing mutations) or ALK rearrangement.",
+        "field_required": "EGFR_ALK_mutation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known ROS1 rearrangement.",
+        "field_required": "ROS1_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or prior autoimmune disease requiring systemic treatment within the past 2 years, excluding replacement therapy (thyroxine, insulin, physiologic corticosteroids) and excluding vitiligo, resolved childhood asthma/atopy, or well-controlled type 1 diabetes.",
+        "field_required": "autoimmune_disease_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known active CNS metastases; previously treated brain metastases are permitted if clinically stable for >=4 weeks, no new/enlarging lesions on MRI within 28 days of first dose, and off CNS-indicated corticosteroids (>10mg/day prednisone equivalent) for >=14 days.",
+        "field_required": "CNS_metastases_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Leptomeningeal disease, regardless of other CNS metastasis status.",
+        "field_required": "leptomeningeal_disease_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of non-infectious pneumonitis/interstitial lung disease requiring steroids, or current pneumonitis/ILD; history of fully resolved radiation pneumonitis without ongoing corticosteroid requirement is not exclusionary.",
+        "field_required": "pneumonitis_ILD_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Receipt of a live or live-attenuated vaccine within 30 days of first dose (inactivated vaccines permitted).",
+        "field_required": "vaccine_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known HIV infection with CD4 count <350 cells/uL or detectable viral load within past 6 months; HIV-positive subjects with adequate immune function on stable ART >4 weeks with undetectable viral load are permitted.",
+        "field_required": "HIV_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known active hepatitis B (HBsAg positive and/or detectable HBV DNA) or hepatitis C (detectable HCV RNA); prior HBV infection with undetectable HBV DNA or cured HCV with undetectable RNA are permitted.",
+        "field_required": "hepatitis_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active infection requiring systemic therapy; subjects must have completed IV antibiotics >=7 days prior to first dose (oral antibiotics for non-serious infections permitted).",
+        "field_required": "active_infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant cardiovascular disease within 6 months of screening, including myocardial infarction, unstable angina, CVA/TIA, NYHA Class III or IV heart failure, or uncontrolled hypertension (systolic >160 mmHg or diastolic >100 mmHg despite optimal management).",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "QTcF interval >470 ms (females) or >450 ms (males) at screening.",
+        "field_required": "QTc_interval",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Second- or third-degree heart block unless a pacemaker is in place.",
+        "field_required": "cardiac_conduction_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known additional malignancy that is active and/or progressive requiring treatment, excluding basal cell carcinoma, curatively treated cutaneous squamous cell carcinoma, carcinoma in situ, or malignancies considered cured with minimal recurrence risk (e.g., low-grade prostate cancer on active surveillance); borderline cases require sponsor medical monitor consultation.",
+        "field_required": "secondary_malignancy_status",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Prior organ or allogeneic stem cell transplant; prior autologous stem cell transplant is permitted if >6 months have elapsed with no active graft-related toxicity.",
+        "field_required": "transplant_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known hypersensitivity to any component of NVB-7734 formulation (histidine, sucrose, polysorbate 80) or severe (Grade >=3) hypersensitivity to any monoclonal antibody.",
+        "field_required": "hypersensitivity_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional clinical trial; subjects who received an investigational agent must complete a washout of at least 28 days or 5 half-lives (whichever is shorter) prior to first dose. Observational/registry study participation is permitted.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "BRC-VT-221",
+    "trial_name": "VIVANTRA-HER2 STUDY: A Phase 2, Open-Label, Single-Arm Study Evaluating VT-4019 (Vivantra) in Combination with Docetaxel in HER2-Positive Locally Advanced or Metastatic Breast Cancer Patients Naive to Anti-HER2 Therapy",
+    "phase": "Phase 2",
+    "condition": "HER2+ Breast Cancer",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years (or age of majority in country, whichever is higher)",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Confirmed HER2-positive disease by local laboratory testing: IHC 3+, or IHC 2+ with confirmatory ISH showing HER2/CEP17 ratio >= 2.0 or average HER2 gene copy number >= 6.0 signals/cell",
+        "field_required": "HER2_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "If local HER2 testing is IHC 2+/ISH equivocal (ratio 1.8-2.2 or copy number 4.0-6.0), central laboratory confirmation of HER2 status is required before study treatment can begin",
+        "field_required": "HER2_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Disease must be locally advanced (not amenable to curative surgery or radiation) or metastatic (Stage IV); de novo metastatic presentation is acceptable",
+        "field_required": "disease_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "For locally advanced disease, patient must have been evaluated by a surgical oncologist and/or radiation oncologist and determined not to be a candidate for curative-intent local therapy, with documentation in the chart",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Patient must not have received any prior anti-HER2 directed therapy (trastuzumab, pertuzumab, T-DM1, trastuzumab deruxtecan, lapatinib, neratinib, tucatinib, margetuximab, or other HER2-targeted agent) in any setting (adjuvant, neoadjuvant, or advanced), EXCEPT that prior adjuvant/neoadjuvant trastuzumab and/or pertuzumab for early-stage disease is allowed if the last dose was administered more than 12 months before documentation of advanced/metastatic disease AND recurrence is not considered refractory (did not occur during or within 6 months of completing adjuvant/neoadjuvant therapy); any prior T-DM1, T-DXd, or HER2 TKI in any setting remains exclusionary with no washout provision; ambiguous cases require medical monitor contact",
+        "field_required": "prior_therapy_history",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "No prior systemic chemotherapy for advanced/metastatic breast cancer allowed",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior hormonal therapy for HR+/HER2+ advanced disease is allowed only if given as single agent without concurrent chemotherapy or anti-HER2 therapy, discontinued at least 7 days before first dose",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior chemotherapy in the adjuvant/neoadjuvant setting is permitted if completed >= 6 months before enrollment, with toxicities resolved to Grade 1 or baseline (except alopecia and peripheral neuropathy which must be <= Grade 2)",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one measurable lesion per RECIST 1.1; bone-only disease is acceptable only with at least one lytic or mixed lytic-blastic lesion with measurable soft-tissue component >= 10mm; exclusively blastic bone disease is not eligible",
+        "field_required": "measurable_disease",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ECOG Performance Status 0-1 (PS 2 patients are not eligible under any circumstance)",
+        "field_required": "ECOG_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1500/mm3, assessed within 14 days of first dose",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Platelets >= 100,000/mm3, assessed within 14 days of first dose",
+        "field_required": "lab_platelets",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin >= 9 g/dL with no transfusion within 7 days prior to assessment",
+        "field_required": "lab_hemoglobin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5 x ULN OR calculated creatinine clearance >= 50 mL/min (Cockcroft-Gault)",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Total bilirubin <= ULN (or <= 2.0 x ULN for patients with documented Gilbert syndrome)",
+        "field_required": "lab_bilirubin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 2.5 x ULN (or <= 5 x ULN if hepatic metastases present)",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "LVEF >= 50% by echocardiogram or MUGA scan, performed within 28 days of first dose; if echo and MUGA results are discrepant, use the echo value",
+        "field_required": "LVEF",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Patients on anticoagulation are eligible if on a stable dose for >= 2 weeks with INR/aPTT within therapeutic range",
+        "field_required": "anticoagulation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Women of reproductive potential must have a negative pregnancy test within 72 hours prior to first dose and agree to use effective contraception during treatment and for 7 months after last VT-4019 dose or 6 months after last docetaxel dose, whichever is later",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Men with female partners of reproductive potential must use barrier contraception during treatment and for 4 months after last dose",
+        "field_required": "contraception_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Availability of tumor tissue: willing to undergo fresh biopsy if archival tissue unavailable; archival tissue acceptable if obtained within 6 months of enrollment with no intervening systemic anticancer therapy; minimum 10 unstained FFPE slides or a tissue block required (sponsor approval allows enrollment without tissue if inaccessible, though not evaluable for biomarker endpoints)",
+        "field_required": "tumor_tissue_availability",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "HER2-low disease (IHC 1+, IHC 2+/ISH negative, or IHC 0) is excluded",
+        "field_required": "HER2_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known ER+ and/or PR+ disease that has not been treated with at least one line of endocrine therapy is excluded unless there is a documented contraindication to endocrine therapy or rapidly progressive visceral crisis requiring immediate chemotherapy",
+        "field_required": "hormone_receptor_status",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Active CNS metastases are excluded; leptomeningeal disease is excluded; treated and stable brain metastases are eligible only if definitive treatment completed >= 4 weeks prior to first dose, no progression on post-treatment brain MRI, and off dexamethasone >= 2 weeks or on stable dose <= 2mg/day dexamethasone equivalent",
+        "field_required": "CNS_metastases_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Inflammatory breast cancer (T4d) with purely inflammatory presentation and no measurable disease beyond skin involvement is excluded; patients with measurable disease beyond skin involvement may be enrolled",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant cardiac history or risk excluded: CHF NYHA Class >= II, myocardial infarction within 6 months, unstable angina, clinically significant uncontrolled arrhythmia, congenital long QT syndrome, history of LVEF decline to <40% on any prior therapy, or QTcF > 480ms at screening",
+        "field_required": "cardiac_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior cumulative anthracycline exposure exceeding 300 mg/m2 doxorubicin-equivalent dose (using specified conversion factors) is excluded",
+        "field_required": "prior_anthracycline_dose",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known additional active malignancy is excluded, except adequately treated non-melanoma skin cancer, cervical CIS, DCIS treated with curative intent, or malignancy diagnosed > 3 years ago without recurrence",
+        "field_required": "prior_malignancy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent low-grade malignancies (e.g., indolent lymphoma on watch-and-wait) should be discussed with the medical monitor for eligibility determination",
+        "field_required": "prior_malignancy_history",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Patients requiring systemic immunosuppression (>10mg/day prednisone or equivalent) are excluded; inhaled/topical steroids and adrenal replacement doses are permitted",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active serious infection requiring parenteral antibiotics or antifungals within 14 days of first dose is excluded",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known HIV, HBV, or HCV infection is not exclusionary if adequately controlled (HIV: undetectable viral load on ART with CD4 >200; HBV: on suppressive therapy with undetectable DNA; HCV: completed treatment with SVR or undetectable RNA)",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hypersensitivity to any component of VT-4019 or docetaxel, or to drugs formulated with polysorbate 80, or history of severe (Grade >=3) infusion-related reaction to any monoclonal antibody therapy is excluded",
+        "field_required": "allergy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pregnant or breastfeeding women are excluded",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Major surgery within 4 weeks of first dose or planned major surgery during the study period is excluded; minor procedures performed >= 7 days prior are not exclusionary",
+        "field_required": "surgical_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior radiation therapy is excluded unless completed >= 2 weeks prior to first dose with all radiation-related toxicities resolved to <= Grade 1 (except alopecia), and radiation was not administered to the only target lesion unless that lesion has subsequently progressed",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent participation in another interventional clinical trial is excluded; prior investigational agent must be discontinued >= 28 days or 5 half-lives (whichever is shorter, minimum 14 days) before first dose",
+        "field_required": "concurrent_trial_participation",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known allergy to any excipient of VT-4019 formulation (L-histidine, L-histidine HCl monohydrate, alpha-alpha-trehalose dihydrate, polysorbate 20, water for injection) is excluded from receiving VT-4019",
+        "field_required": "allergy_history",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "CRC-2025-0138",
+    "trial_name": "A Randomized, Open-Label, Phase 3 Study Comparing Anti-EGFR Monoclonal Antibody CET-880 in Combination with FOLFOX Versus FOLFOX Alone as First-Line Treatment in Subjects with KRAS Wild-Type, RAS Wild-Type Metastatic Colorectal Cancer",
+    "phase": "Phase 3",
+    "condition": "Colorectal Cancer",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Patient must be aged 18 years or older at the time of informed consent.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically or cytologically confirmed adenocarcinoma of the colon or rectum with documented metastatic disease (Stage IV per AJCC 8th edition).",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Confirmed KRAS wild-type (codons 12, 13, 59, 61, 117, 146) and NRAS wild-type status by validated molecular assay performed on tumor tissue from the primary or metastatic site; results must be available prior to randomization.",
+        "field_required": "KRAS_NRAS_mutation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "No prior systemic chemotherapy for metastatic colorectal cancer; prior adjuvant chemotherapy (fluoropyrimidine-based with or without oxaliplatin) is permitted if completed >= 6 months prior to documentation of metastatic disease.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one measurable lesion per RECIST v1.1; previously irradiated lesions are not considered measurable unless documented progression after radiation.",
+        "field_required": "measurable_disease",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ECOG performance status 0 or 1.",
+        "field_required": "ECOG_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1,500/uL, platelets >= 100,000/uL, hemoglobin >= 9.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN or creatinine clearance >= 50 mL/min (Cockcroft-Gault).",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST and ALT <= 3x ULN (or <= 5x ULN if liver metastases are present); total bilirubin <= 1.5x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Adequate coagulation function: INR <= 1.5x ULN and aPTT <= 1.5x ULN unless on therapeutic anticoagulation.",
+        "field_required": "lab_coagulation",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum magnesium >= lower limit of normal; supplementation permitted prior to enrollment.",
+        "field_required": "lab_magnesium",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Left-sided primary tumor (splenic flexure, descending colon, sigmoid colon, or rectum) preferred; right-sided primary tumors (cecum, ascending colon, hepatic flexure, transverse colon) are eligible but stratified separately and the investigator must confirm clinical suitability for anti-EGFR therapy in the context of known inferior outcomes.",
+        "field_required": "tumor_sidedness",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have a negative serum pregnancy test within 7 days prior to first dose and agree to effective contraception throughout treatment and for 6 months after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Life expectancy > 12 weeks in the investigator's clinical judgment.",
+        "field_required": "life_expectancy",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Known BRAF V600E mutation; BRAF-mutant patients are excluded due to expected poor response to anti-EGFR monotherapy backbone.",
+        "field_required": "BRAF_mutation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) tumors, unless the patient has already received and progressed on prior checkpoint inhibitor therapy.",
+        "field_required": "MSI_MMR_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior anti-EGFR therapy (cetuximab, panitumumab, or any investigational EGFR-targeting agent) in any setting.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known grade 3 or higher hypersensitivity to cetuximab, murine proteins, or any component of the CET-880 formulation.",
+        "field_required": "allergy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known peripheral neuropathy >= Grade 2 (CTCAE v5.0); prior oxaliplatin-related neuropathy must have resolved to Grade 1 or lower.",
+        "field_required": "neuropathy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known dihydropyrimidine dehydrogenase (DPD) deficiency; DPD testing is recommended but not mandated prior to enrollment.",
+        "field_required": "DPD_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or untreated brain metastases; treated and stable CNS lesions are permitted if asymptomatic and off steroids >= 2 weeks.",
+        "field_required": "CNS_metastases_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant cardiovascular disease within 6 months: myocardial infarction, unstable angina, NYHA Class III-IV heart failure, or cerebrovascular accident.",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active inflammatory bowel disease or chronic diarrhea (>= 4 loose stools/day at baseline) that, in the investigator's judgment, would impair tolerance of oxaliplatin-based chemotherapy.",
+        "field_required": "GI_condition",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional trial or receipt of investigational agent within 28 days or 5 half-lives prior to first dose.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "MEL-IO-3301",
+    "trial_name": "MERIDIAN-IO: A Phase 2, Randomized, Double-Blind Study of Anti-PD-1 Antibody Pembrova Combined with Anti-LAG-3 Antibody LG-2250 Versus Pembrova Plus Placebo in Patients with Unresectable or Metastatic Melanoma Not Previously Treated with Anti-PD-1/PD-L1 Therapy",
+    "phase": "Phase 2",
+    "condition": "Melanoma",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years at the time of signing informed consent.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically confirmed unresectable Stage III or Stage IV cutaneous, acral, or mucosal melanoma per AJCC 8th edition; uveal melanoma is excluded.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "No prior systemic therapy for unresectable or metastatic melanoma; prior adjuvant or neoadjuvant immunotherapy (anti-PD-1, anti-CTLA-4, or combination) is permitted if completed >= 6 months prior to documentation of unresectable/metastatic disease and no immune-related adverse event requiring systemic immunosuppression persists.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known BRAF V600 mutation status by validated assay; BRAF-mutant and BRAF wild-type patients are both eligible but stratified at randomization.",
+        "field_required": "BRAF_mutation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one measurable lesion per RECIST v1.1.",
+        "field_required": "measurable_disease",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ECOG performance status 0 or 1.",
+        "field_required": "ECOG_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1,500/uL, platelets >= 100,000/uL, hemoglobin >= 9.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 2.5x ULN (or <= 5x ULN with hepatic metastases); total bilirubin <= 1.5x ULN (or <= 3x ULN with Gilbert syndrome).",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN or eGFR >= 40 mL/min/1.73m2 (CKD-EPI).",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum LDH must be documented at baseline for stratification; elevated LDH does not preclude enrollment.",
+        "field_required": "lab_LDH",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Willing to provide a pre-treatment tumor biopsy (fresh preferred, archival acceptable if obtained within 12 months with no intervening systemic therapy) for PD-L1 and LAG-3 expression analysis.",
+        "field_required": "tumor_tissue_availability",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have a negative pregnancy test within 72 hours prior to first dose and agree to effective contraception through 120 days after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Patients with asymptomatic brain metastases may be enrolled if lesions are <= 2 cm, no perilesional edema on MRI, and not requiring corticosteroids; the investigator must confirm neurological stability with documentation.",
+        "field_required": "CNS_metastases_status",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Uveal (ocular) melanoma.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior therapy with any anti-PD-1, anti-PD-L1, anti-LAG-3, or anti-CTLA-4 antibody for unresectable or metastatic disease.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active autoimmune disease requiring systemic immunosuppressive treatment within 2 years; replacement therapy (thyroxine, insulin, physiologic corticosteroids <= 10 mg/day prednisone equivalent) is permitted.",
+        "field_required": "autoimmune_disease_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of immune-related adverse event >= Grade 3 from prior checkpoint inhibitor therapy that has not resolved to Grade 1 or better, except endocrinopathies managed with stable replacement.",
+        "field_required": "prior_irAE_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Symptomatic brain metastases or leptomeningeal disease; requirement for corticosteroids > 10 mg/day prednisone equivalent for CNS indications.",
+        "field_required": "CNS_metastases_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active infection requiring systemic antibiotics, antifungals, or antivirals within 7 days of first dose.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Receipt of live or live-attenuated vaccine within 30 days of first dose.",
+        "field_required": "vaccine_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known HIV with detectable viral load or CD4 < 350 cells/uL; known active HBV or HCV infection.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of organ transplantation (solid organ or allogeneic stem cell) requiring ongoing immunosuppression.",
+        "field_required": "transplant_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional clinical trial; prior investigational agent must have been discontinued >= 28 days before first dose.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "PAN-2025-0044",
+    "trial_name": "PANTERA-1: A Phase 2, Open-Label, Single-Arm Study of Gemcitabine Plus Nab-Paclitaxel in Combination with Novel Stromal Disrupting Agent SDA-4412 in Patients with Locally Advanced, Unresectable Pancreatic Ductal Adenocarcinoma",
+    "phase": "Phase 2",
+    "condition": "Pancreatic Cancer",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years at enrollment.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically or cytologically confirmed pancreatic ductal adenocarcinoma (PDAC); neuroendocrine tumors, acinar cell carcinoma, and other non-ductal histologies are excluded.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Locally advanced, unresectable disease as determined by a multidisciplinary panel including a hepatobiliary/pancreatic surgeon, using NCCN criteria for unresectability (involvement of >180 degrees of the SMA or celiac axis, unreconstructible SMV/portal vein involvement, or aortic involvement).",
+        "field_required": "disease_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Borderline resectable cases may be considered if the patient has been evaluated by a surgical oncologist and deemed not a candidate for upfront resection; these cases require sponsor medical monitor approval prior to enrollment.",
+        "field_required": "disease_stage",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "No prior systemic therapy for pancreatic cancer; prior 5-FU or gemcitabine administered concurrently with radiation as a radiosensitizer is permitted if completed >= 6 months prior to enrollment.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one measurable lesion per RECIST v1.1.",
+        "field_required": "measurable_disease",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ECOG performance status 0 or 1; patients with ECOG PS 2 are excluded.",
+        "field_required": "ECOG_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1,500/uL, platelets >= 100,000/uL, hemoglobin >= 9.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN or creatinine clearance >= 50 mL/min; total bilirubin <= 1.5x ULN (biliary stenting/drainage permitted to achieve this).",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 2.5x ULN; serum albumin >= 3.0 g/dL.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "CA 19-9 must be documented at baseline for stratification; patients with Lewis antigen-negative phenotype (non-secretors) must have CA 19-9 documented as not evaluable.",
+        "field_required": "lab_CA19_9",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Adequate biliary drainage if clinically indicated; patients with biliary obstruction must have successful drainage with total bilirubin returning to <= 1.5x ULN before first dose.",
+        "field_required": "lab_bilirubin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient's nutritional status and pain control are adequate to tolerate gemcitabine/nab-paclitaxel-based therapy; patients with uncontrolled pain requiring rapid-escalation opioids or inability to maintain adequate oral intake despite supportive measures should not be enrolled.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Metastatic disease (Stage IV); patients with peritoneal carcinomatosis, liver metastases, lung metastases, or any distant metastatic site are excluded.",
+        "field_required": "disease_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known BRCA1/BRCA2 germline mutation eligible for PARP inhibitor maintenance; such patients should be directed to PARP-inhibitor-containing trials.",
+        "field_required": "BRCA_mutation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or history of pancreatitis within the past 12 months unrelated to the underlying malignancy.",
+        "field_required": "pancreatitis_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known peripheral neuropathy >= Grade 2.",
+        "field_required": "neuropathy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or poorly controlled diabetes mellitus with HbA1c > 9.0% despite medical management; patients with well-controlled diabetes (HbA1c <= 9.0%) are eligible.",
+        "field_required": "HbA1c",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant cardiovascular disease within 6 months (MI, unstable angina, NYHA Class III-IV CHF, CVA).",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active venous thromboembolism requiring dose-adjustment of anticoagulation within 14 days prior to first dose; stable anticoagulation at therapeutic doses is permitted.",
+        "field_required": "thromboembolic_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Major surgery within 4 weeks of first dose; surgical placement of biliary stent is not considered major surgery.",
+        "field_required": "surgical_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator judgment that the patient has a coexisting medical condition that would substantially increase the risk of gemcitabine-related pulmonary toxicity (e.g., pre-existing interstitial lung disease, significant pulmonary fibrosis, or baseline oxygen dependence).",
+        "field_required": "pulmonary_history",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional clinical trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "RCC-TK-1120",
+    "trial_name": "CLARITY-RCC: A Randomized, Open-Label, Phase 3 Study of TKI-9920 (a Novel Multi-Kinase Inhibitor) Plus Nivolumab Versus Sunitinib Monotherapy as First-Line Treatment in Patients with Advanced or Metastatic Renal Cell Carcinoma with Clear Cell Component",
+    "phase": "Phase 3",
+    "condition": "Renal Cell Carcinoma",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically confirmed renal cell carcinoma with a clear cell component (pure clear cell or mixed histology with predominant clear cell features >= 50%); non-clear cell RCC is excluded.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Advanced (not amenable to curative surgery or radiation) or metastatic disease (Stage IV).",
+        "field_required": "disease_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "No prior systemic therapy for advanced or metastatic RCC; prior neoadjuvant or adjuvant therapy is permitted if completed >= 6 months prior to documented recurrence/metastasis.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "IMDC risk score must be documented at screening (favorable, intermediate, or poor); all risk categories are eligible but used for stratification.",
+        "field_required": "IMDC_risk_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one measurable lesion per RECIST v1.1.",
+        "field_required": "measurable_disease",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Karnofsky Performance Status >= 70%.",
+        "field_required": "KPS_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1,500/uL, platelets >= 100,000/uL, hemoglobin >= 9.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN or creatinine clearance >= 40 mL/min; AST/ALT <= 3x ULN; total bilirubin <= 1.5x ULN.",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Thyroid function: TSH within normal limits or adequately controlled on thyroid replacement therapy with stable dose >= 4 weeks.",
+        "field_required": "lab_thyroid",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "LVEF >= 50% by echocardiogram or MUGA scan within 28 days of first dose.",
+        "field_required": "LVEF",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Blood pressure adequately controlled (systolic < 150 mmHg and diastolic < 90 mmHg) on stable antihypertensive regimen for >= 1 week prior to first dose; patients with borderline hypertension may be enrolled at investigator discretion if close monitoring is planned.",
+        "field_required": "blood_pressure",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception through 5 months after last dose of nivolumab.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Non-clear cell RCC histology (pure papillary, chromophobe, collecting duct, medullary, or unclassified without clear cell component).",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior TKI therapy (sunitinib, pazopanib, cabozantinib, axitinib, lenvatinib, or other VEGFR-TKI) in any setting.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior immune checkpoint inhibitor therapy (anti-PD-1, anti-PD-L1, or anti-CTLA-4) for RCC in any setting.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Untreated or symptomatic brain metastases; treated and stable brain metastases permitted if asymptomatic, off corticosteroids >= 2 weeks, and confirmed stable on imaging >= 4 weeks after treatment.",
+        "field_required": "CNS_metastases_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of GI perforation, fistula, or intra-abdominal abscess within 6 months.",
+        "field_required": "GI_complication_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Clinically significant cardiovascular disease: MI within 6 months, unstable angina, NYHA Class III-IV heart failure, uncontrolled hypertension (systolic >= 160 mmHg or diastolic >= 100 mmHg despite optimal therapy), or arterial thromboembolic event within 6 months.",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active autoimmune disease requiring systemic immunosuppression within 2 years; replacement therapy permitted.",
+        "field_required": "autoimmune_disease_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "QTcF > 480 ms at screening; concomitant use of medications known to prolong QTc that cannot be discontinued or switched.",
+        "field_required": "QTc_interval",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known hepatitis B or C with active replication; HIV with detectable viral load or CD4 < 200.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Proteinuria >= 3+ on dipstick or urine protein/creatinine ratio > 1.0; 24-hour urine collection showing protein > 1 g/day.",
+        "field_required": "lab_proteinuria",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional trial; prior investigational agent within 28 days.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "OVR-2024-0892",
+    "trial_name": "OPAL-ADC: A Phase 2, Open-Label, Single-Arm Study Evaluating the Efficacy and Safety of Antibody-Drug Conjugate FRa-DXd (OVR-7782) in Patients with Platinum-Resistant Epithelial Ovarian, Fallopian Tube, or Primary Peritoneal Cancer Expressing Folate Receptor Alpha",
+    "phase": "Phase 2",
+    "condition": "Ovarian Cancer",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically confirmed epithelial ovarian cancer, fallopian tube cancer, or primary peritoneal cancer of high-grade serous, endometrioid, or clear cell histology.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Platinum-resistant disease, defined as disease progression within 6 months of completing the last platinum-containing regimen; patients with primary platinum-refractory disease (progression during or within 4 weeks of completing first-line platinum therapy) are also eligible.",
+        "field_required": "platinum_resistance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Folate receptor alpha (FRa) expression confirmed by IHC on archival or fresh tumor tissue: membrane staining score >= 2+ in >= 25% of tumor cells using a validated FRa assay.",
+        "field_required": "FRa_expression_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Received 1-3 prior lines of systemic therapy for advanced disease (including the platinum-based regimen defining resistance); patients with > 3 prior lines are excluded.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one measurable lesion per RECIST v1.1 or evaluable disease per GCIG CA-125 criteria.",
+        "field_required": "measurable_disease",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ECOG performance status 0 or 1.",
+        "field_required": "ECOG_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1,500/uL, platelets >= 100,000/uL, hemoglobin >= 9.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN or eGFR >= 50 mL/min/1.73m2; AST/ALT <= 3x ULN; total bilirubin <= 1.5x ULN.",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "LVEF >= 50% by echocardiogram within 28 days of first dose (due to potential cardiac effects of DXd payload).",
+        "field_required": "LVEF",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Resolution of all toxicities from prior therapy to <= Grade 1 (except alopecia and Grade 2 peripheral neuropathy).",
+        "field_required": "prior_therapy_toxicity_resolution",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient can tolerate the planned treatment regimen given the cumulative toxicity burden from prior lines of therapy.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Low-grade serous, mucinous, or carcinosarcoma histology.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior treatment with any antibody-drug conjugate with a topoisomerase I inhibitor payload (e.g., mirvetuximab soravtansine permitted; prior trastuzumab deruxtecan excluded).",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of interstitial lung disease (ILD) or pneumonitis that required systemic corticosteroids; drug-induced ILD/pneumonitis from prior therapy.",
+        "field_required": "pneumonitis_ILD_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active bowel obstruction or clinically significant ascites requiring paracentesis more frequently than once every 2 weeks.",
+        "field_required": "bowel_obstruction_ascites_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active corneal disease or history of corneal transplantation (due to FRa expression in corneal epithelium).",
+        "field_required": "ophthalmologic_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known active CNS metastases; treated and stable brain metastases permitted if off corticosteroids >= 2 weeks.",
+        "field_required": "CNS_metastases_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant cardiac disease within 6 months or LVEF < 50%.",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known hypersensitivity to any component of OVR-7782 formulation.",
+        "field_required": "allergy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pregnant or breastfeeding; female patients must have negative pregnancy test within 7 days of first dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "GBM-NR-0501",
+    "trial_name": "NOVA-GLIO: A Phase 1/2, Open-Label, Dose-Escalation and Expansion Study of Novel Radiosensitizer NRS-1105 Administered Concurrently with Standard Radiation Therapy in Patients with Recurrent Glioblastoma Following Prior Temozolomide-Based Chemoradiation",
+    "phase": "Phase 1/2",
+    "condition": "Glioblastoma",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Histologically confirmed glioblastoma (WHO Grade 4) at initial diagnosis or at recurrence; IDH-wildtype glioblastoma is required for the Phase 2 expansion cohort.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "First or second recurrence after prior standard-of-care treatment including maximal safe surgical resection (if feasible) and temozolomide-based chemoradiation (Stupp protocol or equivalent).",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Recurrence confirmed by contrast-enhanced MRI demonstrating measurable disease per RANO criteria (at least one enhancing lesion with bidimensional measurement >= 10 mm x 10 mm); pseudoprogression must be excluded by advanced imaging (perfusion MRI, MR spectroscopy) or interval imaging at investigator discretion.",
+        "field_required": "measurable_disease",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Karnofsky Performance Status >= 60%.",
+        "field_required": "KPS_performance_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stable or decreasing corticosteroid dose (dexamethasone <= 4 mg/day or equivalent) for >= 5 days prior to baseline MRI.",
+        "field_required": "corticosteroid_use",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Adequate interval from prior therapies: >= 12 weeks from prior radiation, >= 4 weeks from cytotoxic chemotherapy, >= 2 weeks from targeted/biologic therapy, >= 4 weeks from bevacizumab.",
+        "field_required": "prior_therapy_washout",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Absolute neutrophil count >= 1,500/uL, platelets >= 100,000/uL, hemoglobin >= 10.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum creatinine <= 1.5x ULN; AST/ALT <= 3x ULN; total bilirubin <= 1.5x ULN.",
+        "field_required": "lab_creatinine",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "MGMT promoter methylation status must be documented (methylated or unmethylated); used for stratification in Phase 2 expansion.",
+        "field_required": "MGMT_methylation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Tumor must be amenable to re-irradiation as determined by the treating radiation oncologist, with consideration of cumulative brain dose constraints and proximity to critical structures; this assessment must be documented prior to enrollment.",
+        "field_required": "radiation_planning_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "More than 2 prior recurrences or > 2 prior lines of systemic therapy for glioblastoma.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior re-irradiation to the brain at any time; prior stereotactic radiosurgery (SRS) to the recurrent lesion is exclusionary; SRS to a separate lesion may be permitted with sponsor approval.",
+        "field_required": "prior_radiation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diffuse leptomeningeal gliomatosis or extensive subependymal spread.",
+        "field_required": "disease_extent",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Multifocal recurrence with more than 3 separate enhancing lesions.",
+        "field_required": "disease_extent",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Planned use of bevacizumab concurrently with study treatment; prior bevacizumab is permitted if discontinued >= 4 weeks.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known seizure disorder not adequately controlled with anti-epileptic therapy (>= 2 seizures per month despite optimized medication).",
+        "field_required": "seizure_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active systemic infection requiring IV antibiotics.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant medical comorbidity that, in the investigator's judgment, would preclude safe participation in a combined radiosensitizer and radiation therapy protocol.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Pregnant or breastfeeding; female patients must use effective contraception during treatment and for 6 months after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "CHF-RM-4400",
+    "trial_name": "RESOLVE-HF: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Study to Evaluate the Efficacy and Safety of Novel Cardiac Myosin Activator CMA-3310 in Patients with Heart Failure with Reduced Ejection Fraction (HFrEF) and Left Ventricular Ejection Fraction <= 35%",
+    "phase": "Phase 3",
+    "condition": "Heart Failure",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of chronic heart failure with reduced ejection fraction (HFrEF) for >= 3 months prior to screening.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "LVEF <= 35% by echocardiogram performed within 30 days of randomization; if discrepant with a prior measurement, the most recent study-qualifying echo takes precedence.",
+        "field_required": "LVEF",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "NYHA functional class II or III at screening; patients with NYHA Class IV are excluded; patients transitioning between Class II and III within the screening period are eligible based on investigator assessment of predominant class.",
+        "field_required": "NYHA_class",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "NT-proBNP >= 400 pg/mL (or BNP >= 100 pg/mL) at screening; for patients with atrial fibrillation, NT-proBNP must be >= 900 pg/mL (or BNP >= 300 pg/mL).",
+        "field_required": "NT_proBNP",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "On stable, optimized guideline-directed medical therapy (GDMT) for HFrEF for >= 4 weeks prior to randomization, including maximally tolerated doses of ACEi/ARB/ARNI, beta-blocker, and MRA, unless documented intolerance or contraindication; SGLT2 inhibitor use documented but not mandated.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "At least one heart failure hospitalization or urgent IV diuretic visit within the past 12 months, or persistent symptoms (KCCQ-TSS < 75) despite optimized GDMT.",
+        "field_required": "HF_hospitalization_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "eGFR >= 20 mL/min/1.73m2 (CKD-EPI).",
+        "field_required": "eGFR",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Serum potassium 3.5-5.5 mEq/L at screening.",
+        "field_required": "lab_potassium",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin >= 9.0 g/dL.",
+        "field_required": "lab_hemoglobin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Systolic blood pressure >= 90 mmHg at screening and randomization.",
+        "field_required": "blood_pressure",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Heart failure due to uncorrected primary valvular disease, hypertrophic cardiomyopathy, restrictive cardiomyopathy, constrictive pericarditis, active myocarditis, or congenital heart disease.",
+        "field_required": "HF_etiology",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Acute decompensated heart failure requiring IV inotropes, vasopressors, or mechanical circulatory support within 2 weeks of randomization.",
+        "field_required": "HF_decompensation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Cardiac resynchronization therapy (CRT) device implanted within 3 months of screening, or planned CRT implantation during the study; stable CRT for >= 3 months is permitted.",
+        "field_required": "device_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Myocardial infarction, coronary revascularization (PCI or CABG), or cardiac surgery within 3 months of screening.",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stroke or TIA within 3 months of screening.",
+        "field_required": "cerebrovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Sustained ventricular tachycardia or ventricular fibrillation within 3 months, unless an ICD is in place and functional.",
+        "field_required": "arrhythmia_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Heart rate < 50 bpm at screening (in absence of pacemaker) or symptomatic bradycardia.",
+        "field_required": "heart_rate",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe hepatic impairment (Child-Pugh C) or AST/ALT > 3x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Planned cardiac transplantation or left ventricular assist device (LVAD) implantation during the study period; patients on transplant waitlist with anticipated wait time > 12 months may be considered after sponsor discussion.",
+        "field_required": "cardiac_transplant_status",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional trial involving a heart failure therapeutic agent.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "AFB-2025-0221",
+    "trial_name": "AFFIRM-AF: A Phase 2, Randomized, Sham-Controlled Study Evaluating Catheter Ablation Plus Adjunctive Anti-Inflammatory Agent COL-4088 Versus Catheter Ablation Plus Placebo for the Treatment of Persistent Atrial Fibrillation",
+    "phase": "Phase 2",
+    "condition": "Atrial Fibrillation",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 and <= 80 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Documented persistent atrial fibrillation (AF episode lasting > 7 days, or requiring cardioversion after >= 48 hours) with at least one episode documented on 12-lead ECG, Holter monitor, or implantable cardiac monitor within the past 12 months.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Symptomatic AF: EHRA symptom score >= IIa despite rate control therapy, or patient intolerant of at least one rate control agent.",
+        "field_required": "symptom_severity",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Failed or intolerant of at least one Class I or Class III antiarrhythmic drug.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Scheduled for first-time catheter ablation for AF (pulmonary vein isolation); patients with prior ablation are excluded.",
+        "field_required": "ablation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Left atrial diameter <= 55 mm by echocardiography (parasternal long-axis view) or left atrial volume index <= 48 mL/m2.",
+        "field_required": "left_atrial_size",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "LVEF >= 40% by echocardiogram within 30 days of the ablation procedure.",
+        "field_required": "LVEF",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Adequate anticoagulation for >= 3 weeks prior to ablation, or TEE demonstrating absence of left atrial appendage thrombus within 48 hours prior to procedure.",
+        "field_required": "anticoagulation_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "eGFR >= 30 mL/min/1.73m2.",
+        "field_required": "eGFR",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "hsCRP must be measured at baseline for stratification; elevated hsCRP does not preclude enrollment.",
+        "field_required": "lab_hsCRP",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator's assessment that the patient's atrial fibrillation pattern and substrate are amenable to catheter ablation, considering the duration of continuous AF (patients with continuous AF > 3 years require sponsor approval).",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Long-standing persistent AF (continuous AF > 12 months without any documented sinus rhythm episode).",
+        "field_required": "AF_duration",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior surgical or catheter-based AF ablation procedure.",
+        "field_required": "ablation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known left atrial appendage thrombus identified on pre-procedural imaging.",
+        "field_required": "LAA_thrombus_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe valvular heart disease (severe mitral stenosis, mechanical prosthetic valve, or severe mitral regurgitation with planned surgical intervention).",
+        "field_required": "valvular_disease_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "NYHA Class III or IV heart failure or LVEF < 40%.",
+        "field_required": "NYHA_class",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active systemic inflammatory or autoimmune disease (e.g., rheumatoid arthritis, lupus, inflammatory bowel disease) requiring systemic anti-inflammatory or immunosuppressive therapy; such conditions would confound CRP-based endpoints.",
+        "field_required": "autoimmune_disease_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active peptic ulcer disease, history of GI perforation, or known contraindication to colchicine-class agents.",
+        "field_required": "GI_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hepatic impairment with AST/ALT > 2x ULN or total bilirubin > 1.5x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pregnancy, breastfeeding, or unwillingness to use effective contraception.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "PAH-EN-3320",
+    "trial_name": "STELLAR-PAH: A Phase 2, Randomized, Double-Blind, Placebo-Controlled Study of Novel Selective Endothelin-A Receptor Antagonist ERA-7550 in Patients with Pulmonary Arterial Hypertension WHO Functional Class II-III on Background PAH Therapy",
+    "phase": "Phase 2",
+    "condition": "Pulmonary Arterial Hypertension",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age 18-75 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Confirmed diagnosis of WHO Group 1 pulmonary arterial hypertension (idiopathic, heritable, drug/toxin-induced, or associated with connective tissue disease, congenital heart disease with simple systemic-to-pulmonary shunt, or HIV); other WHO groups are excluded.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "WHO Functional Class II or III at screening.",
+        "field_required": "WHO_functional_class",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Right heart catheterization (RHC) within 6 months of screening confirming: mean pulmonary arterial pressure (mPAP) >= 25 mmHg at rest, pulmonary artery wedge pressure (PAWP) <= 15 mmHg, and pulmonary vascular resistance (PVR) >= 3 Wood units.",
+        "field_required": "RHC_hemodynamics",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "6-minute walk distance (6MWD) between 150 and 500 meters at screening, with a repeat test within 15% of the first value.",
+        "field_required": "6MWD",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "On stable background PAH-specific therapy (PDE5 inhibitor and/or prostacyclin pathway agent) at unchanged doses for >= 12 weeks prior to randomization; patients on background endothelin receptor antagonist therapy are excluded.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "NT-proBNP >= 150 pg/mL at screening.",
+        "field_required": "NT_proBNP",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 2x ULN; total bilirubin <= 1.5x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin >= 10.0 g/dL for males, >= 9.0 g/dL for females.",
+        "field_required": "lab_hemoglobin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have a negative pregnancy test and agree to dual contraception (hormonal + barrier) during treatment and for 3 months after last dose due to potential teratogenic effects of endothelin receptor antagonists.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient's functional limitation is primarily due to PAH and not significantly attributable to deconditioning, obesity (BMI > 40), musculoskeletal disease, or other comorbidities that limit exercise capacity.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "WHO Functional Class I or Class IV at screening.",
+        "field_required": "WHO_functional_class",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Current treatment with any endothelin receptor antagonist (bosentan, ambrisentan, macitentan) within 4 weeks of randomization; prior ERA use with documented intolerance or failure is permitted if washout of >= 4 weeks has been completed.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pulmonary hypertension due to left heart disease (WHO Group 2), lung disease (WHO Group 3), chronic thromboembolic PH (WHO Group 4), or other mechanisms (WHO Group 5).",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Clinically significant restrictive (FVC < 60% predicted) or obstructive (FEV1/FVC < 0.60) lung disease.",
+        "field_required": "FVC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Systemic systolic blood pressure < 90 mmHg at screening.",
+        "field_required": "blood_pressure",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe hepatic impairment (Child-Pugh B or C) or baseline AST/ALT > 3x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin < 9.0 g/dL or known hereditary hemoglobinopathy (e.g., sickle cell disease) that could affect 6MWD interpretation.",
+        "field_required": "lab_hemoglobin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hospitalization for right heart failure or clinical worsening of PAH (escalation of PAH therapy, IV prostacyclin initiation) within 3 months of screening.",
+        "field_required": "PAH_worsening_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pregnancy or breastfeeding; endothelin receptor antagonists are teratogenic and strictly contraindicated in pregnancy.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional PAH trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "T2D-GL-0819",
+    "trial_name": "DUAL-FORCE: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Study Evaluating the Efficacy and Safety of Novel Dual GIP/GLP-1 Receptor Agonist DGA-2280 in Patients with Type 2 Diabetes Mellitus Inadequately Controlled on Metformin Monotherapy",
+    "phase": "Phase 3",
+    "condition": "Type 2 Diabetes",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of type 2 diabetes mellitus for >= 6 months prior to screening.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "HbA1c >= 7.0% and <= 10.5% at screening, confirmed by central laboratory.",
+        "field_required": "HbA1c",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "On stable dose of metformin >= 1,000 mg/day (or maximum tolerated dose with documented inability to increase) for >= 8 weeks prior to screening.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "No other glucose-lowering medications (sulfonylureas, SGLT2 inhibitors, DPP-4 inhibitors, thiazolidinediones, insulin, or any GLP-1 receptor agonist) within 8 weeks prior to screening; patients who discontinued such agents >= 8 weeks prior are eligible.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "BMI >= 25 kg/m2 and <= 45 kg/m2 at screening.",
+        "field_required": "BMI",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Fasting C-peptide >= 1.0 ng/mL to confirm residual beta-cell function.",
+        "field_required": "lab_C_peptide",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "eGFR >= 45 mL/min/1.73m2 (CKD-EPI) at screening.",
+        "field_required": "eGFR",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Fasting triglycerides <= 500 mg/dL at screening.",
+        "field_required": "lab_triglycerides",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Willing and able to self-inject subcutaneous medication or have a caregiver capable of administering injections.",
+        "field_required": "injection_capability",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stable body weight (self-reported variation < 5% within 3 months prior to screening).",
+        "field_required": "body_weight_stability",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have a negative pregnancy test and agree to effective contraception through 2 months after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Type 1 diabetes mellitus, latent autoimmune diabetes in adults (LADA), or secondary diabetes (pancreatitis, pancreatectomy, Cushing's syndrome).",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of diabetic ketoacidosis within 6 months of screening.",
+        "field_required": "DKA_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe hypoglycemia (requiring third-party assistance) within 6 months of screening.",
+        "field_required": "hypoglycemia_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of acute or chronic pancreatitis; lipase or amylase > 3x ULN at screening.",
+        "field_required": "pancreatitis_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Personal or family history of medullary thyroid carcinoma (MTC) or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
+        "field_required": "MTC_MEN2_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of bariatric surgery (gastric bypass, sleeve gastrectomy, adjustable gastric band) or planned bariatric procedure during the study.",
+        "field_required": "bariatric_surgery_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe gastroparesis or other significant GI disorder that may affect drug absorption, in the investigator's clinical judgment.",
+        "field_required": "GI_condition",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "NYHA Class III-IV heart failure or hospitalization for heart failure within 6 months.",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Proliferative diabetic retinopathy or macular edema requiring acute treatment.",
+        "field_required": "diabetic_retinopathy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional diabetes trial or use of investigational glucose-lowering agent within 3 months.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "NAS-FBR-2210",
+    "trial_name": "FIBROSOLVE: A Phase 2, Randomized, Double-Blind, Placebo-Controlled Study of Antifibrotic Agent AFB-6640 in Patients with Biopsy-Confirmed Non-Alcoholic Steatohepatitis (NASH) and Liver Fibrosis Stage F2-F3",
+    "phase": "Phase 2",
+    "condition": "NASH / Fatty Liver Disease",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age 18-75 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Liver biopsy within 6 months of screening (or during screening) demonstrating NASH with NAS (NAFLD Activity Score) >= 4 with at least 1 point each for steatosis, lobular inflammation, and hepatocyte ballooning.",
+        "field_required": "liver_biopsy",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Fibrosis stage F2 or F3 on liver biopsy per NASH CRN scoring system; patients with F0, F1, or F4 (cirrhosis) are excluded.",
+        "field_required": "fibrosis_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "BMI >= 25 kg/m2 (or >= 23 kg/m2 for Asian patients).",
+        "field_required": "BMI",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ALT >= 1.5x ULN at screening to ensure active disease.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "If diabetic, HbA1c <= 9.5% on stable glucose-lowering therapy (unchanged for >= 3 months); non-diabetic patients eligible without HbA1c threshold.",
+        "field_required": "HbA1c",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Alcohol consumption must be < 21 standard drinks/week for men and < 14 drinks/week for women for at least 2 years prior to screening, confirmed by patient history and AUDIT-C score.",
+        "field_required": "alcohol_consumption",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Platelet count >= 100,000/uL; INR <= 1.3.",
+        "field_required": "lab_platelets",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "eGFR >= 45 mL/min/1.73m2.",
+        "field_required": "eGFR",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stable use of vitamin E, pioglitazone, or obeticholic acid is permitted if dose unchanged for >= 6 months; initiation of these agents during the study is prohibited.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Biopsy adequacy is subject to central pathology review; biopsies with < 15 mm total length or < 6 portal tracts may be deemed inadequate and require repeat biopsy at the investigator's discretion.",
+        "field_required": "liver_biopsy",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Cirrhosis (fibrosis stage F4 on biopsy), clinical evidence of cirrhosis (ascites, variceal bleeding, hepatic encephalopathy), or FibroScan liver stiffness >= 14.0 kPa.",
+        "field_required": "fibrosis_stage",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Other chronic liver disease: autoimmune hepatitis, primary biliary cholangitis, primary sclerosing cholangitis, Wilson disease, hemochromatosis (unless treated), alpha-1 antitrypsin deficiency with liver involvement.",
+        "field_required": "liver_disease_etiology",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active HBV (HBsAg positive) or HCV (detectable HCV RNA) infection; prior HCV with documented SVR is permitted.",
+        "field_required": "hepatitis_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant alcohol use (>= 21 drinks/week for men, >= 14 drinks/week for women) at any point within the past 2 years; prior history of alcohol use disorder is exclusionary unless documented sustained sobriety >= 3 years.",
+        "field_required": "alcohol_consumption",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Use of medications known to cause hepatic steatosis (amiodarone, systemic corticosteroids > 7 days, methotrexate, tamoxifen, valproic acid) within 3 months of screening unless on stable dose and clinically necessary.",
+        "field_required": "concomitant_medications",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "History of liver transplantation.",
+        "field_required": "transplant_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Total bilirubin > 2x ULN (unless documented Gilbert syndrome).",
+        "field_required": "lab_bilirubin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known hepatocellular carcinoma or other active malignancy.",
+        "field_required": "malignancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Bariatric surgery within 5 years of screening or planned bariatric surgery during the study; weight loss > 10% body weight within 6 months of screening.",
+        "field_required": "bariatric_surgery_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pregnancy or breastfeeding; effective contraception required during treatment and for 3 months after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "OBS-MET-4401",
+    "trial_name": "TRANSFORM-MET: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Study of Novel Central Appetite Regulator APR-8120 in Patients with Obesity and Metabolic Syndrome",
+    "phase": "Phase 3",
+    "condition": "Obesity",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "BMI >= 30 kg/m2, or BMI >= 27 kg/m2 with at least one weight-related comorbidity (hypertension, dyslipidemia, type 2 diabetes, obstructive sleep apnea).",
+        "field_required": "BMI",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Metabolic syndrome defined by presence of at least 3 of 5 criteria: waist circumference >= 102 cm (men) or >= 88 cm (women), fasting triglycerides >= 150 mg/dL or on triglyceride-lowering therapy, HDL-C < 40 mg/dL (men) or < 50 mg/dL (women) or on HDL-raising therapy, blood pressure >= 130/85 mmHg or on antihypertensive therapy, fasting glucose >= 100 mg/dL or on glucose-lowering therapy.",
+        "field_required": "metabolic_syndrome_criteria",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stable body weight (self-reported variation < 5 kg) within 3 months prior to screening.",
+        "field_required": "body_weight_stability",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "If on antihypertensive, lipid-lowering, or glucose-lowering medications, doses must be stable for >= 3 months prior to screening.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "eGFR >= 30 mL/min/1.73m2.",
+        "field_required": "eGFR",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 3x ULN; total bilirubin <= 1.5x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Fasting triglycerides <= 500 mg/dL.",
+        "field_required": "lab_triglycerides",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "HbA1c <= 10.0% if diabetic; if on insulin, total daily dose must be stable (variation < 20%) for >= 8 weeks.",
+        "field_required": "HbA1c",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Willing to participate in standardized lifestyle counseling (diet + exercise) provided to all study participants.",
+        "field_required": "lifestyle_counseling_willingness",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient's obesity is not primarily attributable to a treatable endocrine disorder (untreated hypothyroidism, Cushing's syndrome) or known monogenic obesity syndrome.",
+        "field_required": "obesity_etiology",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception during treatment and for 2 months after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "History of bariatric surgery (gastric bypass, sleeve gastrectomy, adjustable band, biliopancreatic diversion) or planned bariatric procedure during the study.",
+        "field_required": "bariatric_surgery_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Current or recent (within 3 months) use of GLP-1 receptor agonists (semaglutide, liraglutide, tirzepatide, dulaglutide), anti-obesity medications (phentermine, orlistat, naltrexone/bupropion), or other investigational weight-loss agents.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Uncontrolled type 2 diabetes with HbA1c > 10.0% or requiring intensification of glucose-lowering therapy at screening.",
+        "field_required": "HbA1c",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Type 1 diabetes mellitus.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of major depressive disorder with suicidal ideation within the past 2 years, or any lifetime history of suicide attempt; PHQ-9 score >= 15 at screening.",
+        "field_required": "psychiatric_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active bulimia nervosa, binge-eating disorder requiring pharmacotherapy, or other significant eating disorder as determined by the investigator.",
+        "field_required": "eating_disorder_history",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "NYHA Class III-IV heart failure; MI, stroke, or TIA within 6 months.",
+        "field_required": "cardiovascular_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Personal or family history of medullary thyroid carcinoma or MEN 2 (precautionary exclusion for agents with incretin-like activity).",
+        "field_required": "MTC_MEN2_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of pancreatitis within 12 months or lipase > 3x ULN at screening.",
+        "field_required": "pancreatitis_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional weight-management or metabolic syndrome trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "RA-JAK-5502",
+    "trial_name": "JOINT-RELIEF: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Study of Novel Selective JAK1 Inhibitor JKI-5500 in Patients with Moderate-to-Severe Active Rheumatoid Arthritis Who Have Had an Inadequate Response to Methotrexate",
+    "phase": "Phase 3",
+    "condition": "Rheumatoid Arthritis",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of rheumatoid arthritis (RA) per 2010 ACR/EULAR classification criteria for at least 6 months prior to screening.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active disease at screening defined by >= 6 tender joints (68-joint count), >= 6 swollen joints (66-joint count), and hsCRP >= 5 mg/L or ESR >= 28 mm/hr.",
+        "field_required": "DAS28_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "DAS28-CRP >= 3.2 at screening (moderate or high disease activity).",
+        "field_required": "DAS28_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Inadequate response to methotrexate (MTX): on stable dose of MTX 15-25 mg/week (or >= 10 mg/week with documented intolerance to higher doses) for >= 12 weeks, with stable dose for >= 4 weeks prior to baseline.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Positive for rheumatoid factor (RF) and/or anti-citrullinated protein antibody (anti-CCP) at screening, or documented erosive disease on hand/wrist/foot radiographs.",
+        "field_required": "serology_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin >= 9.0 g/dL, ANC >= 1,000/uL, platelets >= 100,000/uL, lymphocyte count >= 750/uL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 1.5x ULN; eGFR >= 40 mL/min/1.73m2.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Lipid panel (total cholesterol, LDL, HDL, triglycerides) must be documented at baseline for cardiovascular risk stratification.",
+        "field_required": "lab_lipids",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception during treatment and for 4 weeks after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator's assessment that the patient's functional limitations are primarily attributable to RA disease activity rather than irreversible joint damage.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Prior use of any JAK inhibitor (tofacitinib, baricitinib, upadacitinib, filgotinib, or investigational JAK inhibitor).",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Use of biologic DMARDs (TNF inhibitors, IL-6 inhibitors, abatacept, rituximab, or other biologic) within the following washout periods: 4 weeks for etanercept, 8 weeks for infliximab/adalimumab/certolizumab/golimumab/tocilizumab/sarilumab/abatacept, 6 months for rituximab (with confirmed B-cell reconstitution).",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Use of conventional synthetic DMARDs other than methotrexate (leflunomide, sulfasalazine, hydroxychloroquine) unless on stable dose >= 12 weeks and continued through the study; leflunomide requires washout or cholestyramine elimination if discontinued.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prednisone > 10 mg/day (or equivalent corticosteroid) or unstable corticosteroid dose within 4 weeks of baseline.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of or current venous thromboembolism (DVT, PE) or arterial thrombotic event (MI, stroke) within 12 months; age >= 65 years with at least one additional cardiovascular risk factor (current smoking, hypertension, diabetes) requires sponsor discussion given JAK inhibitor class safety signals.",
+        "field_required": "thromboembolic_history",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Known current malignancy or history of malignancy within 5 years, except adequately treated non-melanoma skin cancer or cervical CIS.",
+        "field_required": "malignancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or latent tuberculosis (positive QuantiFERON-TB Gold or tuberculin skin test >= 5 mm induration) unless the patient has completed >= 1 month of an accepted TB prophylaxis regimen prior to first dose and agrees to complete the full course.",
+        "field_required": "TB_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active herpes zoster or history of disseminated herpes zoster; patients must have completed herpes zoster vaccination (recombinant) >= 4 weeks prior to first dose if not previously vaccinated.",
+        "field_required": "herpes_zoster_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known HIV, active HBV (HBsAg positive), or active HCV (detectable RNA) infection; prior HCV with SVR is permitted.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Lymphocyte count < 750/uL at screening.",
+        "field_required": "lab_lymphocytes",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional RA trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "SLE-BIO-0993",
+    "trial_name": "LUSTRE-SLE: A Phase 2, Randomized, Double-Blind, Placebo-Controlled Study of B-Cell Targeted Biologic BCD-4470 in Patients with Active Systemic Lupus Erythematosus Despite Standard-of-Care Therapy",
+    "phase": "Phase 2",
+    "condition": "Lupus (SLE)",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of systemic lupus erythematosus (SLE) fulfilling the 2019 EULAR/ACR classification criteria, diagnosed >= 6 months prior to screening.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active disease at screening: SLEDAI-2K score >= 6, with at least 4 points from clinical criteria (excluding serological criteria alone).",
+        "field_required": "SLEDAI_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Positive anti-dsDNA antibody (>= 30 IU/mL by Farr assay or equivalent) or low complement (C3 < LLN and/or C4 < LLN) at screening.",
+        "field_required": "lab_autoantibodies",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "On stable standard-of-care therapy for >= 30 days prior to baseline, which must include at least one of: antimalarial (hydroxychloroquine), immunosuppressive (azathioprine, mycophenolate, methotrexate), or oral corticosteroid (prednisone <= 20 mg/day or equivalent).",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "If on corticosteroids, prednisone dose must be <= 20 mg/day and stable for >= 2 weeks prior to baseline.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ANC >= 1,000/uL (or >= 500/uL if attributable to SLE per investigator judgment), platelets >= 50,000/uL, hemoglobin >= 8.0 g/dL.",
+        "field_required": "lab_ANC",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "eGFR >= 30 mL/min/1.73m2; urine protein/creatinine ratio <= 2.0 mg/mg (patients with active lupus nephritis Class V with higher proteinuria may be permitted after sponsor discussion).",
+        "field_required": "eGFR",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception during treatment and for 6 months after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Willingness to maintain current SLE standard-of-care medications at stable doses through Week 24 (unless dose reduction is required for safety).",
+        "field_required": "medication_adherence",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Active severe lupus nephritis (Class III or IV with recent flare within 3 months) requiring induction immunosuppressive therapy; stable Class V membranous nephritis on maintenance therapy may be permitted.",
+        "field_required": "lupus_nephritis_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active neuropsychiatric lupus (seizures, psychosis, transverse myelitis, cerebral vasculitis) within 12 months.",
+        "field_required": "neuropsychiatric_lupus_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior treatment with B-cell depleting therapy (rituximab, obinutuzumab, ocrelizumab) within 12 months, or evidence of persistent B-cell depletion (CD19 count < LLN) regardless of timing.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior treatment with belimumab within 3 months or anifrolumab within 3 months.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Cyclophosphamide use within 6 months of baseline.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or latent tuberculosis; active serious infection requiring hospitalization or IV antimicrobials within 4 weeks of baseline.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known HIV, active HBV, or active HCV infection.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "History of anaphylaxis to any biologic therapy.",
+        "field_required": "allergy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known IgA deficiency (serum IgA < 10 mg/dL), which increases the risk of severe infections with B-cell targeted therapy.",
+        "field_required": "lab_immunoglobulins",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional SLE trial or receipt of investigational agent within 28 days or 5 half-lives.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "IBD-IL23-7710",
+    "trial_name": "HORIZON-CD: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Induction and Maintenance Study of Anti-IL-23p19 Monoclonal Antibody ILB-2290 in Patients with Moderately to Severely Active Crohn's Disease",
+    "phase": "Phase 3",
+    "condition": "Inflammatory Bowel Disease",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 18 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of Crohn's disease (CD) for >= 3 months prior to screening, confirmed by clinical, endoscopic, radiographic, and/or histologic criteria.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Moderately to severely active CD at screening defined by CDAI score 220-450.",
+        "field_required": "CDAI_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Endoscopic evidence of active disease: SES-CD (Simple Endoscopic Score for Crohn's Disease) >= 6 (or >= 4 for patients with isolated ileal disease) on centrally-read ileocolonoscopy performed within 8 weeks of baseline.",
+        "field_required": "endoscopy_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Inadequate response, loss of response, or intolerance to at least one of the following: conventional therapy (corticosteroids, immunomodulators such as azathioprine, 6-mercaptopurine, or methotrexate) or biologic therapy (anti-TNF agents, vedolizumab, ustekinumab).",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "If on oral corticosteroids, dose must be <= 20 mg/day prednisone equivalent and stable for >= 2 weeks prior to baseline; budesonide <= 9 mg/day permitted.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "If on immunomodulators (azathioprine, 6-MP, methotrexate), dose must be stable for >= 8 weeks prior to baseline.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Fecal calprotectin >= 250 ug/g or CRP >= 5 mg/L at screening as objective evidence of active inflammation.",
+        "field_required": "lab_fecal_calprotectin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin >= 8.5 g/dL, ANC >= 1,500/uL, platelets >= 100,000/uL.",
+        "field_required": "lab_ANC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 2x ULN; serum creatinine <= 1.5x ULN.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception during treatment and for 15 weeks after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient's symptoms are attributable to active CD inflammation and not primarily due to stricture-related obstruction, short bowel syndrome, or bile salt diarrhea.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Diagnosis of ulcerative colitis or indeterminate colitis.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known symptomatic bowel stricture requiring imminent surgical intervention or endoscopic dilation.",
+        "field_required": "bowel_stricture_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Short bowel syndrome (history of extensive intestinal resection with < 200 cm of remaining small bowel).",
+        "field_required": "surgical_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active perianal or intra-abdominal abscess; perianal fistulae without abscess are permitted.",
+        "field_required": "abscess_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Current ileostomy or colostomy.",
+        "field_required": "ostomy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Prior treatment with any anti-IL-23p19 antibody (risankizumab, guselkumab, tildrakizumab, mirikizumab); prior ustekinumab (anti-IL-12/23p40) is permitted with appropriate washout (>= 8 weeks).",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Anti-TNF therapy (infliximab, adalimumab, certolizumab) or vedolizumab within 8 weeks of baseline; for anti-TNF agents with detectable drug levels, washout is extended until drug level is below the assay limit of quantification.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active or latent tuberculosis (positive QuantiFERON-TB Gold) unless prophylaxis initiated >= 3 weeks prior to first dose with plan to complete full course.",
+        "field_required": "TB_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Stool positive for Clostridioides difficile toxin at screening.",
+        "field_required": "stool_pathogen_screen",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known active hepatitis B or C, or HIV infection with CD4 < 200.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional IBD trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "AST-BIO-1840",
+    "trial_name": "BREATHE-CLEAR: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Study of Anti-TSLP Monoclonal Antibody TSL-4480 as Add-On Therapy in Patients with Severe Uncontrolled Eosinophilic Asthma Despite Medium-to-High Dose Inhaled Corticosteroids Plus a Second Controller",
+    "phase": "Phase 3",
+    "condition": "Severe Asthma",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 12 years (adolescents 12-17 with body weight >= 40 kg are eligible).",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Physician-diagnosed asthma for >= 12 months prior to screening per GINA guidelines.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe uncontrolled asthma defined by: receiving medium-to-high dose ICS (>= 500 mcg fluticasone propionate equivalent/day) plus at least one additional controller (LABA, LTRA, LAMA, or theophylline) at stable doses for >= 3 months prior to screening.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Blood eosinophil count >= 300 cells/uL at screening or >= 150 cells/uL with FeNO >= 25 ppb.",
+        "field_required": "eosinophil_count",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pre-bronchodilator FEV1 40-85% predicted at screening.",
+        "field_required": "FEV1",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Documented reversibility (FEV1 increase >= 12% and >= 200 mL after 400 mcg salbutamol) at screening or within the past 12 months, or positive methacholine challenge (PC20 <= 16 mg/mL) within 12 months.",
+        "field_required": "bronchodilator_reversibility",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": ">= 2 asthma exacerbations requiring systemic corticosteroids (oral/injectable, >= 3 days) or >= 1 hospitalization/ED visit for asthma within the past 12 months, despite controller therapy.",
+        "field_required": "exacerbation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "ACQ-6 (Asthma Control Questionnaire) score >= 1.5 at screening.",
+        "field_required": "asthma_control_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Demonstrated adherence to controller medications (>= 80% as assessed by device counter review or pharmacy refill records) during the run-in period.",
+        "field_required": "medication_adherence",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Non-smoker or ex-smoker with smoking history < 10 pack-years and no smoking within the past 12 months.",
+        "field_required": "smoking_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception during treatment and for 120 days after last dose.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient's uncontrolled symptoms are not primarily attributable to poor inhaler technique, non-adherence, or untreated comorbidities (allergic rhinitis, GERD, vocal cord dysfunction).",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Current use of biologic therapy for asthma (omalizumab, mepolizumab, reslizumab, benralizumab, dupilumab, tezepelumab) or use within the following washout periods: 4 months for omalizumab, 5 months for mepolizumab/reslizumab, 4 months for benralizumab, 2 months for dupilumab.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Maintenance oral corticosteroids (daily use for > 14 consecutive days within 4 weeks of screening); burst courses for exacerbations are permitted if completed >= 2 weeks before baseline.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Current smoker or smoking history >= 10 pack-years.",
+        "field_required": "smoking_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of COPD, bronchiectasis, allergic bronchopulmonary aspergillosis (ABPA), or other chronic respiratory disease other than asthma that, in the investigator's judgment, is the primary cause of symptoms.",
+        "field_required": "respiratory_comorbidities",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Respiratory tract infection (upper or lower) requiring antibiotics or antivirals within 2 weeks of baseline.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known parasitic (helminth) infection within 6 months of screening or ongoing risk requiring prophylaxis.",
+        "field_required": "parasitic_infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known immunodeficiency or immunosuppressive therapy other than stable low-dose oral corticosteroids and inhaled corticosteroids.",
+        "field_required": "immunodeficiency_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known hypersensitivity to any component of the TSL-4480 formulation.",
+        "field_required": "allergy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Pregnancy or breastfeeding.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional asthma trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "IPF-AFB-0330",
+    "trial_name": "FIBREHOLD: A Phase 2, Randomized, Double-Blind, Placebo-Controlled Study Evaluating Novel Antifibrotic Agent NFA-3320 in Patients with Idiopathic Pulmonary Fibrosis on Stable Background Antifibrotic Therapy",
+    "phase": "Phase 2",
+    "condition": "Idiopathic Pulmonary Fibrosis",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 40 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Diagnosis of idiopathic pulmonary fibrosis (IPF) per 2022 ATS/ERS/JRS/ALAT guidelines, confirmed by high-resolution CT pattern of usual interstitial pneumonia (UIP) or probable UIP, with or without surgical lung biopsy confirmation.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "HRCT pattern reviewed and confirmed by a central radiology committee; cases with probable UIP on CT that have not undergone surgical biopsy require multidisciplinary discussion (MDD) confirmation documented in source records.",
+        "field_required": "imaging_confirmation",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "FVC >= 45% predicted at screening.",
+        "field_required": "FVC",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "DLCO (corrected for hemoglobin) >= 25% predicted at screening.",
+        "field_required": "DLCO",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "On stable dose of approved background antifibrotic therapy (pirfenidone or nintedanib) for >= 8 weeks prior to screening; dose reductions for tolerability are acceptable if the dose has been stable for >= 4 weeks prior to baseline.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "FVC decline of >= 5% relative (or >= 100 mL absolute) within the past 12-24 months despite background antifibrotic therapy, documented by serial pulmonary function tests.",
+        "field_required": "FVC_decline_rate",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Able to perform reliable, reproducible spirometry per ATS/ERS standards.",
+        "field_required": "spirometry_quality",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "6-minute walk distance >= 150 meters at screening with SpO2 nadir >= 80% on room air or supplemental oxygen.",
+        "field_required": "6MWD",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "AST/ALT <= 3x ULN; total bilirubin <= 1.5x ULN; eGFR >= 30 mL/min/1.73m2.",
+        "field_required": "lab_AST_ALT",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Known cause of pulmonary fibrosis other than IPF (e.g., connective tissue disease-associated ILD, hypersensitivity pneumonitis, drug-induced ILD, asbestosis, sarcoidosis).",
+        "field_required": "ILD_etiology",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Obstructive lung disease: FEV1/FVC ratio < 0.70 at screening (post-bronchodilator).",
+        "field_required": "FEV1",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Current treatment with systemic corticosteroids > 10 mg/day prednisone equivalent or systemic immunosuppressives (azathioprine, mycophenolate, cyclophosphamide) for IPF; these agents should have been discontinued >= 4 weeks prior to screening.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Acute exacerbation of IPF within 3 months of screening.",
+        "field_required": "IPF_exacerbation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Listed for lung transplantation or expected to receive lung transplant within 12 months.",
+        "field_required": "transplant_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Significant emphysema (> 15% of lung fields on HRCT) that, in the investigator's judgment, is the predominant contributor to the patient's physiologic impairment.",
+        "field_required": "emphysema_extent",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Active respiratory infection within 4 weeks of screening.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Severe pulmonary hypertension (estimated RVSP > 50 mmHg by echocardiogram or mean PAP > 35 mmHg by RHC).",
+        "field_required": "pulmonary_hypertension_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional IPF trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  },
+  {
+    "trial_id": "COP-TRI-2260",
+    "trial_name": "TRILOGY-COPD: A Randomized, Double-Blind, Parallel-Group Phase 3 Study Comparing Triple Fixed-Dose Combination Inhaler (ICS/LABA/LAMA) Plus Adjunctive Anti-IL-5 Biologic MEP-2260 Versus Triple Inhaler Plus Placebo in Patients with Severe COPD and Frequent Eosinophilic Exacerbations",
+    "phase": "Phase 3",
+    "condition": "COPD",
+    "inclusion_criteria": [
+      {
+        "criterion_text": "Age >= 40 years.",
+        "field_required": "age",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "COPD diagnosis per GOLD criteria with post-bronchodilator FEV1/FVC < 0.70 and FEV1 < 50% predicted at screening.",
+        "field_required": "diagnosis",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "GOLD group E (>= 2 moderate exacerbations or >= 1 exacerbation requiring hospitalization within the past 12 months) despite triple inhaler therapy (ICS/LABA/LAMA).",
+        "field_required": "exacerbation_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Blood eosinophil count >= 300 cells/uL at screening (or >= 150 cells/uL with documented eosinophilia >= 300 cells/uL on at least one measurement within the past 12 months).",
+        "field_required": "eosinophil_count",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "On stable triple inhaler therapy (ICS at medium-to-high dose + LABA + LAMA) for >= 3 months prior to screening.",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "CAT (COPD Assessment Test) score >= 10 at screening.",
+        "field_required": "CAT_score",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Smoking history >= 10 pack-years (current or former smoker).",
+        "field_required": "smoking_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Chest imaging (CT or X-ray) within the past 12 months with no findings suggestive of alternative diagnoses (lung malignancy, active TB, significant bronchiectasis).",
+        "field_required": "chest_imaging",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Able to perform acceptable and reproducible spirometry per ATS/ERS standards.",
+        "field_required": "spirometry_quality",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Hemoglobin >= 9.0 g/dL; AST/ALT <= 2x ULN; eGFR >= 30 mL/min/1.73m2.",
+        "field_required": "lab_hemoglobin",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Female patients of childbearing potential must have negative pregnancy test and agree to effective contraception.",
+        "field_required": "pregnancy_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Investigator assessment that the patient's exacerbation pattern has an eosinophilic phenotype and is not primarily driven by chronic bacterial colonization, bronchiectasis, or poor medication adherence.",
+        "field_required": "clinical_assessment",
+        "type": "judgment_call"
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "criterion_text": "Diagnosis of asthma or asthma-COPD overlap (ACO) as the primary respiratory condition; patients with a remote childhood history of asthma that is not currently active may be considered after sponsor discussion.",
+        "field_required": "diagnosis",
+        "type": "judgment_call"
+      },
+      {
+        "criterion_text": "Current use of biologic therapy for any respiratory indication (mepolizumab, benralizumab, dupilumab, tezepelumab) or use within 5 half-lives of the respective agent.",
+        "field_required": "prior_therapy_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "COPD exacerbation or respiratory infection requiring antibiotics or systemic corticosteroids within 4 weeks of baseline; such events require a 4-week stable period before rescreening.",
+        "field_required": "exacerbation_timing",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Maintenance oral corticosteroids (> 5 mg/day prednisone equivalent continuously for > 14 days within 4 weeks of screening).",
+        "field_required": "concomitant_medications",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Alpha-1 antitrypsin deficiency as the primary cause of COPD.",
+        "field_required": "alpha1_antitrypsin_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Clinically significant bronchiectasis (involvement of >= 3 lobes on CT) as the predominant contributor to exacerbations.",
+        "field_required": "bronchiectasis_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Active pulmonary tuberculosis or non-tuberculous mycobacterial infection.",
+        "field_required": "infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Known parasitic (helminth) infection within 6 months; anti-IL-5 therapy may increase susceptibility to parasitic infections.",
+        "field_required": "parasitic_infection_status",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Long-term oxygen therapy for > 15 hours/day (supplemental oxygen for exercise or nocturnal use is permitted).",
+        "field_required": "supplemental_oxygen_use",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Lung volume reduction surgery or lung transplant history; patients listed for transplantation are excluded.",
+        "field_required": "surgical_history",
+        "type": "hard_rule"
+      },
+      {
+        "criterion_text": "Concurrent enrollment in another interventional COPD trial.",
+        "field_required": "concurrent_trial_enrollment",
+        "type": "hard_rule"
+      }
+    ]
+  }
+]

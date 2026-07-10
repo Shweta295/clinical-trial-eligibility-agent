@@ -1,0 +1,112 @@
+CLINICAL REFERRAL NOTE — CLINICAL TRIAL SCREENING
+
+Date of Dictation: 06/24/2026
+Referring Physician: Dr. Anita Mehrotra, Pulmonology/Thoracic Oncology
+Institution: Riverside Regional Medical Center, Falls Church, VA
+Patient: Robert J. Callahan
+MRN: 8847201
+DOB: 03/15/1972 (Age 54)
+Sex: Male
+
+REASON FOR REFERRAL:
+Evaluation for enrollment in Protocol ONC-2024-0471 (NVB-7734 + platinum doublet chemotherapy for unresectable Stage III NSCLC).
+
+HISTORY OF PRESENT ILLNESS:
+Mr. Callahan is a 54-year-old male, former smoker (32 pack-year history, quit in 2019), who presented in late April 2026 with a persistent cough, mild hemoptysis, and a 12-pound unintentional weight loss over the preceding three months. Chest CT on 04/28/2026 revealed a 4.8 cm spiculated mass in the right upper lobe with mediastinal lymphadenopathy involving stations 4R and 7, and bulky subcarinal disease. No distant metastatic disease was identified. CT abdomen/pelvis was unremarkable. Brain MRI obtained on 05/06/2026 showed no intracranial metastases.
+
+CT-guided core needle biopsy of the RUL mass was performed on 05/03/2026. Pathology confirmed poorly differentiated adenocarcinoma of the lung. Immunohistochemistry was consistent with primary pulmonary origin (TTF-1 positive, CK7 positive, CK20 negative, p40 negative). No small-cell component was identified.
+
+PET/CT on 05/10/2026 demonstrated FDG-avid uptake in the RUL primary (SUVmax 14.2), right paratracheal nodes (SUVmax 8.6), and subcarinal nodes (SUVmax 9.1). No extrathoracic FDG-avid disease.
+
+Staging per AJCC 8th edition: T4N2M0, Stage IIIB.
+
+MOLECULAR AND BIOMARKER TESTING:
+FoundationOne CDx comprehensive genomic profiling (resulted 05/22/2026):
+- EGFR: Wild-type (no sensitizing mutations detected)
+- ALK rearrangement: Not detected
+- ROS1 rearrangement: Not detected
+- KRAS: G12C mutation identified (does not exclude per protocol)
+- PD-L1 TPS (22C3 pharmDx): 35% (category: 1-49%)
+- TMB: 11.2 mutations/Mb
+
+SURGICAL EVALUATION:
+Patient was presented at the thoracic multidisciplinary tumor board on 05/15/2026. Given the bulky N2 subcarinal adenopathy and T4 primary with mediastinal invasion, the consensus was that the disease is NOT surgically resectable. Dr. William Tsao (thoracic surgery) and Dr. Lisa Ferrero (radiation oncology) both concurred. Documentation of the tumor board decision is available in the medical record. Definitive concurrent chemoradiation was discussed as an alternative, but the patient and team are interested in clinical trial options given the extent of mediastinal involvement.
+
+ECOG PERFORMANCE STATUS: 1
+Patient is ambulatory and able to carry out light housework and office-type work. He continues to drive himself to appointments. His functional limitation is primarily mild dyspnea on exertion related to the tumor mass and some fatigue, but he is fully capable of self-care. In my clinical judgment, life expectancy is well in excess of 6 months.
+
+PAST MEDICAL HISTORY:
+- Hypertension, well-controlled on lisinopril 10 mg daily
+- Hyperlipidemia, on atorvastatin 20 mg daily
+- Appendectomy age 22 (remote, no issues)
+- No history of autoimmune disease
+- No history of pneumonitis or interstitial lung disease
+- No history of any other malignancy
+- No prior organ or stem cell transplant
+- No known seizure disorder
+
+PRIOR ONCOLOGIC THERAPY:
+No prior systemic therapy for NSCLC or any other malignancy. No prior chemotherapy, immunotherapy, or targeted therapy. No prior radiation therapy. No prior investigational agents. He is not currently enrolled in any other clinical trial.
+
+INFECTIOUS DISEASE HISTORY:
+- HIV: Negative (tested 05/2026)
+- Hepatitis B surface antigen: Negative
+- Hepatitis C antibody: Negative
+- No active infections at this time
+- No recent IV antibiotics
+
+VACCINATION HISTORY:
+Last influenza vaccine (inactivated) in October 2025. No live vaccines within the past 12 months. COVID boosters are all inactivated platform.
+
+ALLERGIES / HYPERSENSITIVITIES:
+- Sulfonamide antibiotics (rash) — not relevant to study drugs
+- No known allergy to polysorbate 80, histidine, sucrose, or any monoclonal antibody
+- No prior infusion reactions of any grade
+
+CURRENT MEDICATIONS:
+1. Lisinopril 10 mg PO daily
+2. Atorvastatin 20 mg PO daily
+3. Acetaminophen 500 mg PO PRN for headache
+4. No systemic corticosteroids
+5. No anticoagulant therapy
+6. No immunosuppressive medications
+
+LABORATORY DATA (drawn 06/20/2026, within 14 days of anticipated first dose):
+- WBC: 7.2 x10^3/uL
+- ANC: 4,800/uL
+- Platelets: 218,000/uL
+- Hemoglobin: 13.4 g/dL (no recent transfusions)
+- Serum creatinine: 0.94 mg/dL (ULN 1.20)
+- Calculated CrCl (Cockcroft-Gault): 92 mL/min (adequate for cisplatin, which requires >= 60 mL/min)
+- AST: 24 U/L (ULN 40)
+- ALT: 28 U/L (ULN 41)
+- Total bilirubin: 0.6 mg/dL (ULN 1.2)
+- Alkaline phosphatase: 72 U/L
+- INR: 1.0
+- PT: 12.4 sec
+- aPTT: 28 sec
+- LDH: 198 U/L
+- Albumin: 3.9 g/dL
+- TSH: 2.1 mIU/L (normal)
+
+SCREENING ECG (06/20/2026):
+Normal sinus rhythm, rate 72 bpm. QTcF 412 ms. No ST-T wave abnormalities. No conduction delays. No heart block.
+
+CARDIOVASCULAR HISTORY:
+No myocardial infarction, unstable angina, stroke, or TIA. No heart failure. Blood pressure at today's visit 132/78 mmHg on current regimen. No significant arrhythmia history. No congenital long QT syndrome.
+
+TISSUE AVAILABILITY:
+The CT-guided core biopsy from 05/03/2026 yielded sufficient tissue. We have an FFPE block available with adequate material, obtained within 60 days of anticipated randomization. PD-L1 testing has already been completed on this specimen (TPS 35%). Fifteen unstained slides can be prepared from remaining block material for any additional correlative studies.
+
+REPRODUCTIVE STATUS:
+Male patient. Wife is age 52 and postmenopausal. Patient has been counseled regarding the requirement for barrier contraception if partner were of childbearing potential, and he understands and agrees.
+
+INFORMED CONSENT:
+Patient has reviewed the study information sheet and has had a thorough discussion with the study team regarding the risks, benefits, and alternatives. He is motivated to participate and is willing to sign informed consent pending formal screening confirmation.
+
+ASSESSMENT AND PLAN:
+Mr. Callahan is a 54-year-old male with newly diagnosed Stage IIIB (T4N2M0) pulmonary adenocarcinoma, EGFR/ALK/ROS1 wild-type, PD-L1 TPS 35%, ECOG PS 1, who has been determined unresectable by multidisciplinary tumor board consensus. He has received no prior systemic therapy, has adequate organ function by all laboratory parameters, and has no identified exclusion criteria for Protocol ONC-2024-0471. He is an excellent candidate for this study. Plan to proceed with formal screening and enrollment.
+
+Dr. Anita Mehrotra, MD, FCCP
+Thoracic Oncology, Riverside Regional Medical Center
+Dictated: 06/24/2026 | Transcribed: 06/24/2026

@@ -89,8 +89,9 @@ def get_results():
     session = SessionLocal()
     try:
         rows = (
-            session.query(Result, Patient)
+            session.query(Result, Patient, Trial)
             .join(Patient, Result.patient_id == Patient.id)
+            .join(Trial, Result.trial_id == Trial.id)
             .order_by(Result.created_at.desc())
             .all()
         )
@@ -101,11 +102,12 @@ def get_results():
                 "patient_id": p.patient_id,
                 "source_file": p.source_file,
                 "trial_id": r.trial_id,
+                "trial_condition": (t.data or {}).get("condition", ""),
                 "eligibility": r.eligibility,
                 "summary": r.summary,
                 "created_at": r.created_at.isoformat() if r.created_at else None,
             }
-            for r, p in rows
+            for r, p, t in rows
         ]
     finally:
         session.close()
@@ -380,6 +382,7 @@ def dashboard_stats():
             by_trial[t.id] = {
                 "trial_name": t.name,
                 "phase": t.phase,
+                "condition": (t.data or {}).get("condition", ""),
                 "total_screenings": total,
                 "eligible": sum(1 for r in trial_results if r.eligibility == "ELIGIBLE"),
                 "not_eligible": sum(1 for r in trial_results if r.eligibility == "NOT_ELIGIBLE"),

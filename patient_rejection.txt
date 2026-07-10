@@ -1,0 +1,121 @@
+CLINICAL REFERRAL NOTE — CLINICAL TRIAL SCREENING
+
+Date of Dictation: 06/26/2026
+Referring Physician: Dr. James Kowalski, Medical Oncology
+Institution: Summit Health Cancer Institute, Morristown, NJ
+Patient: Linda M. Vasquez
+MRN: 3302917
+DOB: 11/08/1963 (Age 62)
+Sex: Female
+
+REASON FOR REFERRAL:
+Evaluation for enrollment in Protocol ONC-2024-0471 (NVB-7734 + platinum doublet chemotherapy for unresectable Stage III NSCLC).
+
+HISTORY OF PRESENT ILLNESS:
+Ms. Vasquez is a 62-year-old woman with a remote history of Stage IIB melanoma (see oncologic history below) who now presents with a new primary non-small cell lung cancer. She is a former smoker, approximately 28 pack-years, quit in 2014. She was seen in early May 2026 for evaluation of progressive dyspnea and dull left-sided chest pain. Chest CT on 05/05/2026 showed a 5.3 cm mass in the left lower lobe with associated left hilar lymphadenopathy and ipsilateral mediastinal adenopathy involving station 5 (aortopulmonary window) and station 7 (subcarinal). No contralateral mediastinal disease. CT of the abdomen and pelvis was negative for metastatic disease. Bone scan was unremarkable.
+
+Brain MRI on 05/12/2026 was negative for intracranial metastases.
+
+Bronchoscopic biopsy of the LLL mass was performed on 05/09/2026 and confirmed moderately differentiated squamous cell carcinoma. No small-cell or neuroendocrine component was identified. p40 positive, TTF-1 negative, CK5/6 positive — consistent with squamous histology.
+
+PET/CT on 05/14/2026 showed intense FDG uptake in the LLL mass (SUVmax 16.8), left hilar nodes (SUVmax 10.3), and subcarinal nodes (SUVmax 7.4). No extrathoracic disease.
+
+Staging per AJCC 8th edition: T3N2M0, Stage IIIA.
+
+MOLECULAR AND BIOMARKER TESTING:
+Given squamous histology, EGFR/ALK testing was performed per our institutional policy (recommended but not mandated for squamous histology per protocol):
+- EGFR: Wild-type
+- ALK rearrangement: Not detected
+- ROS1: Not tested (not routinely performed for squamous histology)
+- KRAS: Wild-type
+- PD-L1 TPS (22C3 pharmDx): 62% (category: >=50%)
+
+SURGICAL EVALUATION:
+Presented at thoracic multidisciplinary tumor board on 05/20/2026. Given T3 primary with N2 multistation mediastinal involvement, the thoracic surgery team (Dr. Karen Shin) determined the disease was not amenable to complete surgical resection. This is documented in the tumor board minutes and in a separate surgical consultation note dated 05/20/2026.
+
+ECOG PERFORMANCE STATUS: 1
+Patient is fully ambulatory, performs household activities independently, and continues part-time work as a librarian. She reports mild exertional dyspnea limiting vigorous activity but no limitation in activities of daily living or self-care. In my assessment, her life expectancy is estimated at greater than 12 months.
+
+PAST MEDICAL HISTORY:
+- Stage IIB melanoma (left upper arm), diagnosed March 2024, treated with wide local excision and sentinel lymph node biopsy (1 of 3 sentinel nodes positive for micrometastasis). She subsequently received adjuvant pembrolizumab 200 mg IV every 3 weeks for 6 cycles, from June 2024 through November 2025, with last dose administered on 11/14/2025 — approximately 7 months ago. She tolerated pembrolizumab well with only Grade 1 fatigue and a mild maculopapular rash (Grade 1, self-limited). No immune-related hepatitis, colitis, pneumonitis, or endocrinopathy was observed. Most recent dermatologic and oncologic surveillance (April 2026) shows no evidence of melanoma recurrence. Her melanoma is considered in complete remission and has not required treatment for over 7 months.
+- Hypothyroidism, well-controlled on levothyroxine 75 mcg daily (predates melanoma diagnosis, not immune-related)
+- Osteopenia
+- No history of autoimmune disease (hypothyroidism is primary, not autoimmune per endocrinology workup in 2018)
+- No history of pneumonitis or ILD at any time (specifically, no immune-related pneumonitis during pembrolizumab therapy)
+- No prior organ or stem cell transplant
+
+PRIOR ONCOLOGIC THERAPY:
+- Adjuvant pembrolizumab for melanoma as above (last dose 11/14/2025). This was her ONLY prior systemic anticancer therapy.
+- No prior chemotherapy for any indication
+- No prior radiation therapy
+- No prior targeted therapy or other investigational agents
+- Not currently enrolled in any other clinical trial
+
+Note: While Ms. Vasquez has not received prior systemic therapy for her NSCLC specifically, she did receive pembrolizumab (an anti-PD-1 checkpoint inhibitor) as adjuvant therapy for melanoma, completed approximately 7 months prior to the anticipated first dose for this study. I am referring her for screening with awareness that this may require review against the protocol's eligibility requirements.
+
+INFECTIOUS DISEASE HISTORY:
+- HIV: Negative (tested 05/2026)
+- Hepatitis B surface antigen: Negative
+- Anti-HBc: Negative
+- Hepatitis C antibody: Negative
+- No active infections
+- No recent antibiotics (IV or oral)
+
+VACCINATION HISTORY:
+Inactivated influenza vaccine in September 2025. Shingrix (recombinant, non-live) in 2023. No live vaccines in the past 2 years.
+
+ALLERGIES / HYPERSENSITIVITIES:
+- Penicillin (hives, documented childhood reaction — has not been re-challenged)
+- No known allergy to polysorbate 80, histidine, sucrose, or monoclonal antibodies
+- Tolerated pembrolizumab infusions without any infusion-related reaction
+
+CURRENT MEDICATIONS:
+1. Levothyroxine 75 mcg PO daily
+2. Calcium 600 mg + Vitamin D 400 IU PO daily
+3. Ibuprofen 200 mg PO PRN (occasional, for minor aches)
+4. No systemic corticosteroids
+5. No anticoagulants
+6. No immunosuppressive agents
+
+LABORATORY DATA (drawn 06/22/2026):
+- WBC: 6.8 x10^3/uL
+- ANC: 3,900/uL
+- Platelets: 245,000/uL
+- Hemoglobin: 12.1 g/dL (no recent transfusions)
+- Serum creatinine: 0.82 mg/dL (ULN 1.10)
+- Calculated CrCl (Cockcroft-Gault): 78 mL/min
+- AST: 22 U/L (ULN 35)
+- ALT: 19 U/L (ULN 35)
+- Total bilirubin: 0.5 mg/dL (ULN 1.0)
+- Alkaline phosphatase: 64 U/L
+- INR: 1.1
+- aPTT: 26 sec
+- TSH: 3.4 mIU/L (normal on replacement)
+
+SCREENING ECG (06/22/2026):
+Normal sinus rhythm, rate 68 bpm. QTcF 398 ms. No ST-T changes. Normal axis. No conduction abnormalities.
+
+CARDIOVASCULAR HISTORY:
+No history of MI, unstable angina, CVA, TIA, or heart failure. Blood pressure 124/76 mmHg. No arrhythmia. No congenital long QT syndrome.
+
+TISSUE AVAILABILITY:
+Bronchoscopic biopsy from 05/09/2026 — FFPE block is available with adequate tissue. Specimen was obtained within 60 days of anticipated randomization. Twenty unstained slides can be cut. PD-L1 has been completed on this specimen.
+
+REPRODUCTIVE STATUS:
+Female, age 62, postmenopausal (last menstrual period 2017, confirmed by FSH in postmenopausal range in 2018). Pregnancy testing not required per protocol definition of childbearing potential.
+
+INFORMED CONSENT:
+Patient has reviewed the informed consent document and is interested in participation. She understands this is pending eligibility confirmation.
+
+ASSESSMENT AND PLAN:
+Ms. Vasquez is a 62-year-old woman with newly diagnosed Stage IIIA (T3N2M0) squamous cell NSCLC, EGFR/ALK wild-type, PD-L1 TPS 62%, ECOG PS 1, deemed unresectable by tumor board, with excellent organ function and no prior systemic therapy for her lung cancer. She meets the majority of inclusion criteria and does not have most common exclusionary conditions.
+
+However, I want to flag the following concern for the screening team: Ms. Vasquez received adjuvant pembrolizumab (an anti-PD-1 immune checkpoint inhibitor) for a prior Stage IIB melanoma, with her last infusion approximately 7 months ago. The protocol states that "no prior systemic therapy for NSCLC is allowed" and permits prior adjuvant/neoadjuvant chemotherapy if completed >12 months ago — but pembrolizumab is not chemotherapy, it is an immunotherapy agent. Additionally, NVB-7734 targets the PD-L2/TIGIT axis, which is mechanistically related to the PD-1 pathway that pembrolizumab targets. I defer to the study team and medical monitor regarding whether this prior anti-PD-1 exposure is disqualifying.
+
+The prior melanoma itself is in complete remission with no recurrence in over 2 years, so it likely falls under the exception for "malignancy considered cured with minimal risk of recurrence."
+
+Requesting formal eligibility review.
+
+Dr. James Kowalski, MD
+Medical Oncology, Summit Health Cancer Institute
+Dictated: 06/26/2026 | Transcribed: 06/26/2026

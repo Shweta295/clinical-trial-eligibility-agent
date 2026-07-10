@@ -1,0 +1,77 @@
+CLINICAL NOTE — ONCOLOGY CONSULTATION
+Date: 2026-06-15
+Provider: Dr. Sarah Mitchell, MD — Thoracic Oncology
+
+PATIENT INFORMATION
+Name: Anita R. Deshmukh
+MRN: PT-90214
+DOB: 1968-03-22 (Age: 58)
+Sex: Female
+Height: 5'4" | Weight: 142 lbs | BSA: 1.68 m²
+
+CHIEF COMPLAINT
+Follow-up for newly diagnosed non-small cell lung cancer, adenocarcinoma subtype.
+
+HISTORY OF PRESENT ILLNESS
+Ms. Deshmukh is a 58-year-old woman referred after CT-guided biopsy confirmed adenocarcinoma of the right upper lobe. She presented 6 weeks ago with persistent cough and mild hemoptysis. PET-CT showed a 3.2 cm mass in the right upper lobe with ipsilateral mediastinal lymph node involvement. No distant metastases were identified.
+
+Staging: Stage IIIA (T2aN2M0, AJCC 8th edition)
+
+MOLECULAR/BIOMARKER RESULTS
+- EGFR: Wild-type (negative for exon 19 del, L858R, T790M)
+- ALK: Negative by FISH
+- ROS1: Negative
+- PD-L1 TPS: 65% (22C3 assay)
+- KRAS: G12C mutation detected
+- HER2: Not amplified
+
+ECOG PERFORMANCE STATUS: 1
+
+PAST MEDICAL HISTORY
+- Hypertension, well-controlled on amlodipine 5mg daily
+- Hypothyroidism on levothyroxine 75mcg
+- No prior malignancies
+- No autoimmune conditions
+
+SURGICAL HISTORY
+- Cholecystectomy (2015)
+
+PRIOR CANCER TREATMENT
+- None. This is a new diagnosis. No prior chemotherapy, immunotherapy, or radiation therapy.
+
+LABORATORY VALUES (drawn 2026-06-12)
+- WBC: 7.2 x10^9/L
+- ANC: 4.8 x10^9/L
+- Hemoglobin: 13.1 g/dL
+- Platelets: 245 x10^9/L
+- Creatinine: 0.82 mg/dL
+- eGFR: 92 mL/min/1.73m²
+- AST: 24 U/L
+- ALT: 28 U/L
+- Total Bilirubin: 0.6 mg/dL
+- Albumin: 4.1 g/dL
+- INR: 1.0
+
+BRAIN MRI: No evidence of intracranial metastases.
+
+PULMONARY FUNCTION
+- FEV1: 2.4 L (82% predicted)
+
+MEDICATIONS
+1. Amlodipine 5mg daily
+2. Levothyroxine 75mcg daily
+3. Calcium + Vitamin D supplement
+
+ALLERGIES: No known drug allergies
+
+SOCIAL HISTORY
+- Never smoker
+- No alcohol use
+- Lives with husband, two adult children nearby
+- Works as a school principal, currently on medical leave
+
+ASSESSMENT & PLAN
+Newly diagnosed Stage IIIA NSCLC, adenocarcinoma, EGFR wild-type, PD-L1 65%.
+Patient is a good candidate for clinical trial enrollment given her excellent performance status,
+adequate organ function, and lack of prior systemic therapy.
+Discussed clinical trial options with patient — she is interested and consents to screening.
