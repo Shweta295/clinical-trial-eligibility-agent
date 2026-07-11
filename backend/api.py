@@ -4,12 +4,18 @@ import os
 import shutil
 import tempfile
 
+import anthropic
+from dotenv import load_dotenv
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from pydantic import BaseModel
 
 from db import init_db, seed_trials, SessionLocal, Trial, Result, Patient
 from pipeline import run as run_pipeline
+
+load_dotenv()
+chat_client = anthropic.Anthropic()
 
 app = FastAPI(title="Clinical Trial Eligibility Agent", version="1.0.0")
 
@@ -404,6 +410,124 @@ def dashboard_stats():
         }
     finally:
         session.close()
+
+
+# ── POST /recommend-trials ────────────────────────────────────────────────
+
+
+class RecommendRequest(BaseModel):
+    text: str
+
+
+@app.post("/recommend-trials")
+def recommend_trials(req: RecommendRequest):
+    from pipeline import extract_patient_profile, find_candidate_trials
+
+    profile = extract_patient_profile(req.text)
+    candidates = find_candidate_trials(profile, top_k=5)
+
+    return {
+        "patient_name": profile.get("patient_name", "Unknown"),
+        "patient_summary": f"{profile.get('age', '?')}yo {profile.get('sex', '?')}, "
+                           f"{profile.get('cancer_type', '?')}, Stage {profile.get('stage', '?')}",
+        "recommendations": [
+            {
+                "trial_id": c["trial_id"],
+                "trial_name": c["trial_name"],
+                "phase": c["phase"],
+                "condition": (c.get("data") or {}).get("condition", ""),
+                "similarity": c["similarity"],
+                "match_pct": round(c["similarity"] * 100, 1),
+            }
+            for c in candidates
+        ],
+    }
+
+
+# ── POST /chat ────────────────────────────────────────────────────────────
+
+
+class ChatRequest(BaseModel):
+    message: str
+    result_id: int | None = None
+    history: list[dict] | None = None
+
+
+@app.post("/chat")
+def chat(req: ChatRequest):
+    context_parts = []
+
+    session = SessionLocal()
+    try:
+        if req.result_id:
+            r = session.get(Result, req.result_id)
+            if r:
+                p = session.get(Patient, r.patient_id)
+                t = session.get(Trial, r.trial_id)
+                context_parts.append(
+                    f"SCREENING RESULT (ID: {r.id}):\n"
+                    f"Patient: {p.patient_name if p else 'Unknown'} (ID: {p.patient_id if p else '?'})\n"
+                    f"Trial: {r.trial_id} — {t.name if t else '?'} ({t.phase if t else '?'})\n"
+                    f"Verdict: {r.eligibility}\n"
+                    f"Summary: {json.dumps(r.summary)}\n"
+                    f"Disqualifying criteria: {json.dumps(r.disqualifying)}\n"
+                    f"Missing data: {json.dumps(r.missing_data)}\n"
+                    f"Criteria met: {json.dumps(r.criteria_met)}"
+                )
+
+        recent = (
+            session.query(Result, Patient, Trial)
+            .join(Patient, Result.patient_id == Patient.id)
+            .join(Trial, Result.trial_id == Trial.id)
+            .order_by(Result.created_at.desc())
+            .limit(10)
+            .all()
+        )
+        if recent:
+            lines = []
+            for r, p, t in recent:
+                lines.append(
+                    f"- ID:{r.id} | {p.patient_name} | {r.trial_id} ({t.name}) | {r.eligibility}"
+                )
+            context_parts.append("RECENT SCREENINGS:\n" + "\n".join(lines))
+
+        trials = session.query(Trial).all()
+        if trials:
+            trial_lines = [f"- {t.id}: {t.name} ({t.phase})" for t in trials[:20]]
+            context_parts.append("AVAILABLE TRIALS:\n" + "\n".join(trial_lines))
+    finally:
+        session.close()
+
+    system_prompt = (
+        "You are TrialScreen AI Assistant, an expert on clinical trial eligibility. "
+        "You help coordinators, clinicians, and researchers understand screening results, "
+        "trial criteria, and eligibility decisions.\n\n"
+        "Answer concisely and accurately based on the data provided. "
+        "If asked about a specific screening, use the result data. "
+        "If information is not available in the data, say so clearly.\n\n"
+        + "\n\n".join(context_parts)
+    )
+
+    messages = []
+    if req.history:
+        for h in req.history[-8:]:
+            messages.append({"role": h["role"], "content": h["content"]})
+    messages.append({"role": "user", "content": req.message})
+
+    response = chat_client.messages.create(
+        model="claude-sonnet-5",
+        max_tokens=1024,
+        system=system_prompt,
+        thinking={"type": "adaptive"},
+        messages=messages,
+    )
+
+    answer = ""
+    for block in response.content:
+        if block.type == "text":
+            answer += block.text
+
+    return {"answer": answer}
 
 
 if __name__ == "__main__":

@@ -1,14 +1,16 @@
 import { Routes, Route, NavLink } from "react-router-dom";
-import { Upload, BarChart3, History, Activity } from "lucide-react";
+import { Upload, BarChart3, History, Activity, MessageCircle } from "lucide-react";
 import UploadPage from "./pages/UploadPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import HistoryPage from "./pages/HistoryPage.jsx";
 import ResultDetailPage from "./pages/ResultDetailPage.jsx";
+import ChatPage from "./pages/ChatPage.jsx";
 
 const NAV = [
   { to: "/", icon: Upload, label: "Upload" },
   { to: "/dashboard", icon: BarChart3, label: "Dashboard" },
   { to: "/history", icon: History, label: "History" },
+  { to: "/chat", icon: MessageCircle, label: "Ask AI" },
 ];
 
 export default function App() {
@@ -56,6 +58,7 @@ export default function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/results/:id" element={<ResultDetailPage />} />
+          <Route path="/chat" element={<ChatPage />} />
         </Routes>
       </main>
     </div>

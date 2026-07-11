@@ -32,6 +32,26 @@ export async function getDashboardStats() {
   return res.json();
 }
 
+export async function getTrialRecommendations(text) {
+  const res = await fetch(`${BASE}/recommend-trials`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text }),
+  });
+  if (!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
+export async function sendChatMessage(message, resultId = null, history = []) {
+  const res = await fetch(`${BASE}/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message, result_id: resultId, history }),
+  });
+  if (!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
 export async function downloadResultPdf(id) {
   const res = await fetch(`${BASE}/results/${id}/pdf`);
   if (!res.ok) throw new Error("PDF generation failed");

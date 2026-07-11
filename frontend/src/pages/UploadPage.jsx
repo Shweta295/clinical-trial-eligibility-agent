@@ -1,8 +1,163 @@
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Upload, FileText, Image, FileUp, Loader2, CheckCircle2, Search, ShieldCheck, Brain, PenLine, Sparkles } from "lucide-react";
-import { uploadPatientNote, getTrials } from "../api.js";
+import { Upload, FileText, Image, FileUp, Loader2, CheckCircle2, Search, ShieldCheck, Brain, PenLine, Sparkles, FileInput, Cpu, Radar, ClipboardCheck, Timer, Zap, Star } from "lucide-react";
+import { uploadPatientNote, getTrials, getTrialRecommendations } from "../api.js";
 import VerdictBadge from "../components/VerdictBadge.jsx";
+
+const PIPELINE_STEPS = [
+  { id: 1, label: "Document Ingestion", desc: "Parsing and extracting text from clinical note", icon: FileInput, duration: 800 },
+  { id: 2, label: "AI Entity Extraction", desc: "Claude extracts structured patient profile via tool use", icon: Cpu, duration: 3500 },
+  { id: 3, label: "Semantic Trial Matching", desc: "Voyage AI embeddings + pgvector cosine similarity search", icon: Radar, duration: 2000 },
+  { id: 4, label: "Rule-Based Screening", desc: "Deterministic checks on age, labs, biomarkers, vitals", icon: ClipboardCheck, duration: 1500 },
+  { id: 5, label: "AI Clinical Reasoning", desc: "Claude analyzes complex eligibility with medical reasoning", icon: Brain, duration: 4500 },
+];
+
+function PipelineProgress({ apiDone }) {
+  const [activeStep, setActiveStep] = useState(0);
+  const [stepTimers, setStepTimers] = useState({});
+  const startTimeRef = useRef(Date.now());
+  const stepStartRef = useRef(Date.now());
+
+  useEffect(() => {
+    if (activeStep >= PIPELINE_STEPS.length) return;
+
+    const step = PIPELINE_STEPS[activeStep];
+    stepStartRef.current = Date.now();
+
+    const timerInterval = setInterval(() => {
+      setStepTimers((prev) => ({
+        ...prev,
+        [activeStep]: ((Date.now() - stepStartRef.current) / 1000).toFixed(1),
+      }));
+    }, 100);
+
+    const stepTimeout = setTimeout(() => {
+      clearInterval(timerInterval);
+      setStepTimers((prev) => ({
+        ...prev,
+        [activeStep]: ((Date.now() - stepStartRef.current) / 1000).toFixed(1),
+      }));
+      setActiveStep((s) => s + 1);
+    }, step.duration);
+
+    return () => {
+      clearInterval(timerInterval);
+      clearTimeout(stepTimeout);
+    };
+  }, [activeStep]);
+
+  useEffect(() => {
+    if (apiDone && activeStep < PIPELINE_STEPS.length) {
+      const fastForward = () => {
+        setStepTimers((prev) => {
+          const timers = { ...prev };
+          for (let i = activeStep; i < PIPELINE_STEPS.length; i++) {
+            timers[i] = (PIPELINE_STEPS[i].duration / 1000 * 0.3).toFixed(1);
+          }
+          return timers;
+        });
+        setActiveStep(PIPELINE_STEPS.length);
+      };
+      const t = setTimeout(fastForward, 400);
+      return () => clearTimeout(t);
+    }
+  }, [apiDone, activeStep]);
+
+  const totalElapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(1);
+
+  return (
+    <div className="mt-6 bg-white rounded-2xl border border-slate-200 overflow-hidden">
+      <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
+          <h3 className="text-sm font-bold text-slate-700">AI Pipeline Processing</h3>
+        </div>
+        <div className="flex items-center gap-1.5 text-xs text-slate-400">
+          <Timer className="w-3.5 h-3.5" />
+          <span className="font-mono">{totalElapsed}s</span>
+        </div>
+      </div>
+
+      <div className="px-6 py-5">
+        {PIPELINE_STEPS.map((step, i) => {
+          const isComplete = i < activeStep;
+          const isActive = i === activeStep && activeStep < PIPELINE_STEPS.length;
+          const isWaiting = i > activeStep;
+          const StepIcon = step.icon;
+
+          return (
+            <div key={step.id} className="flex gap-4">
+              {/* Vertical line + icon */}
+              <div className="flex flex-col items-center">
+                <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-500 ${
+                  isComplete
+                    ? "bg-emerald-100 text-emerald-600"
+                    : isActive
+                    ? "bg-teal-100 text-teal-700 ring-2 ring-teal-300 ring-offset-2"
+                    : "bg-slate-100 text-slate-400"
+                }`}>
+                  {isComplete ? (
+                    <CheckCircle2 className="w-5 h-5" />
+                  ) : isActive ? (
+                    <StepIcon className="w-5 h-5 animate-pulse" />
+                  ) : (
+                    <StepIcon className="w-5 h-5" />
+                  )}
+                </div>
+                {i < PIPELINE_STEPS.length - 1 && (
+                  <div className={`w-0.5 h-10 my-1 transition-colors duration-500 ${
+                    isComplete ? "bg-emerald-300" : "bg-slate-200"
+                  }`} />
+                )}
+              </div>
+
+              {/* Content */}
+              <div className={`pt-1.5 ${i < PIPELINE_STEPS.length - 1 ? "pb-5" : "pb-1"}`}>
+                <div className="flex items-center gap-2">
+                  <span className={`text-sm font-semibold transition-colors duration-300 ${
+                    isComplete ? "text-emerald-700" : isActive ? "text-teal-800" : "text-slate-400"
+                  }`}>
+                    {step.label}
+                  </span>
+                  {isComplete && (
+                    <span className="text-[10px] font-mono text-emerald-500 bg-emerald-50 px-1.5 py-0.5 rounded">
+                      {stepTimers[i] || "0.0"}s
+                    </span>
+                  )}
+                  {isActive && (
+                    <span className="text-[10px] font-mono text-teal-500 bg-teal-50 px-1.5 py-0.5 rounded animate-pulse">
+                      {stepTimers[i] || "0.0"}s
+                    </span>
+                  )}
+                </div>
+                <p className={`text-xs mt-0.5 transition-colors duration-300 ${
+                  isComplete ? "text-emerald-600" : isActive ? "text-slate-500" : "text-slate-300"
+                }`}>
+                  {isComplete ? "Completed" : isActive ? step.desc : step.desc}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Progress bar */}
+      <div className="px-6 pb-4">
+        <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full transition-all duration-500 ease-out"
+            style={{ width: `${(Math.min(activeStep, PIPELINE_STEPS.length) / PIPELINE_STEPS.length) * 100}%` }}
+          />
+        </div>
+        <p className="text-[11px] text-slate-400 mt-1.5 text-center">
+          {activeStep >= PIPELINE_STEPS.length
+            ? "All stages complete — preparing results..."
+            : `Stage ${activeStep + 1} of ${PIPELINE_STEPS.length}`}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 const ACCEPT = ".txt,.png,.jpg,.jpeg,.pdf";
 
@@ -143,8 +298,12 @@ export default function UploadPage() {
   const [text, setText] = useState("");
   const [dragOver, setDragOver] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [apiDone, setApiDone] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
+  const [recommendations, setRecommendations] = useState(null);
+  const [recoLoading, setRecoLoading] = useState(false);
+  const [selectedTrialId, setSelectedTrialId] = useState(null);
   const inputRef = useRef();
   const navigate = useNavigate();
 
@@ -163,21 +322,43 @@ export default function UploadPage() {
   };
 
   const canSubmit = mode === "file" ? !!file : text.trim().length > 20;
+  const canRecommend = mode === "text" && text.trim().length > 20;
+
+  const handleRecommend = async () => {
+    if (!canRecommend) return;
+    setRecoLoading(true);
+    setRecommendations(null);
+    setSelectedTrialId(null);
+    setError(null);
+    try {
+      const data = await getTrialRecommendations(text.trim());
+      setRecommendations(data);
+    } catch (err) {
+      setError(err.message || "Failed to get recommendations");
+    } finally {
+      setRecoLoading(false);
+    }
+  };
 
   const handleSubmit = async () => {
     if (!canSubmit) return;
     setLoading(true);
+    setApiDone(false);
     setError(null);
     setResults(null);
     try {
+      const trialId = selectedTrialId || null;
       const data = mode === "file"
-        ? await uploadPatientNote(file, null, null)
-        : await uploadPatientNote(null, text, null);
+        ? await uploadPatientNote(file, null, trialId)
+        : await uploadPatientNote(null, text, trialId);
+      setApiDone(true);
+      await new Promise((r) => setTimeout(r, 1200));
       setResults(data.results);
     } catch (err) {
       setError(err.message || "Upload failed");
     } finally {
       setLoading(false);
+      setApiDone(false);
     }
   };
 
@@ -303,11 +484,107 @@ export default function UploadPage() {
         </div>
       )}
 
+      {/* Find Matching Trials button — text mode only */}
+      {mode === "text" && !recommendations && !results && (
+        <button
+          onClick={handleRecommend}
+          disabled={!canRecommend || recoLoading || loading}
+          className="mt-4 w-full py-3 rounded-xl font-medium text-teal-700 border-2 border-teal-200
+            bg-teal-50 hover:bg-teal-100 hover:border-teal-300 transition-colors flex items-center justify-center gap-2
+            disabled:bg-slate-50 disabled:border-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed"
+        >
+          {recoLoading ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              Finding matching trials...
+            </>
+          ) : (
+            <>
+              <Zap className="w-4 h-4" />
+              Find Matching Trials
+            </>
+          )}
+        </button>
+      )}
+
+      {/* Recommendations */}
+      {recommendations && !results && (
+        <div className="mt-4 bg-white rounded-2xl border border-slate-200 overflow-hidden">
+          <div className="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Star className="w-4 h-4 text-amber-500" />
+              <h3 className="text-sm font-bold text-slate-700">AI-Recommended Trials</h3>
+            </div>
+            <span className="text-xs text-slate-400">
+              for {recommendations.patient_name} — {recommendations.patient_summary}
+            </span>
+          </div>
+          <div className="divide-y divide-slate-100">
+            {recommendations.recommendations.map((rec, i) => {
+              const isSelected = selectedTrialId === rec.trial_id;
+              const barColor = rec.match_pct >= 80 ? "bg-emerald-500" : rec.match_pct >= 60 ? "bg-teal-500" : "bg-amber-500";
+              return (
+                <button
+                  key={rec.trial_id}
+                  onClick={() => setSelectedTrialId(isSelected ? null : rec.trial_id)}
+                  className={`w-full px-5 py-3.5 flex items-center gap-4 text-left transition-colors ${
+                    isSelected ? "bg-teal-50 border-l-4 border-l-teal-500" : "hover:bg-slate-50 border-l-4 border-l-transparent"
+                  }`}
+                >
+                  <div className="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-sm font-bold text-slate-500 shrink-0">
+                    #{i + 1}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-semibold text-slate-800 truncate">{rec.trial_name}</span>
+                      <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 shrink-0">
+                        {rec.phase}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="text-xs text-slate-400 font-mono">{rec.trial_id}</span>
+                      {rec.condition && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-50 text-blue-600">
+                          {rec.condition}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <div className="w-20 h-2 bg-slate-100 rounded-full overflow-hidden">
+                      <div className={`h-full rounded-full ${barColor}`} style={{ width: `${rec.match_pct}%` }} />
+                    </div>
+                    <span className={`text-sm font-bold w-12 text-right ${
+                      rec.match_pct >= 80 ? "text-emerald-600" : rec.match_pct >= 60 ? "text-teal-600" : "text-amber-600"
+                    }`}>
+                      {rec.match_pct}%
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+          <div className="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <p className="text-xs text-slate-400">
+              {selectedTrialId
+                ? `Selected: ${selectedTrialId} — will screen this trial only`
+                : "No trial selected — will screen all top matches"}
+            </p>
+            <button
+              onClick={() => { setRecommendations(null); setSelectedTrialId(null); }}
+              className="text-xs text-slate-400 hover:text-red-500 transition-colors"
+            >
+              Clear recommendations
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Submit */}
       <button
         onClick={handleSubmit}
         disabled={!canSubmit || loading}
-        className="mt-6 w-full py-3.5 rounded-xl font-semibold text-white transition-colors flex items-center justify-center gap-2
+        className="mt-4 w-full py-3.5 rounded-xl font-semibold text-white transition-colors flex items-center justify-center gap-2
           bg-teal-600 hover:bg-teal-700 disabled:bg-slate-300 disabled:cursor-not-allowed"
       >
         {loading ? (
@@ -318,10 +595,12 @@ export default function UploadPage() {
         ) : (
           <>
             <CheckCircle2 className="w-5 h-5" />
-            Analyze Eligibility
+            {selectedTrialId ? `Screen Against ${selectedTrialId}` : "Analyze Eligibility"}
           </>
         )}
       </button>
+
+      {loading && <PipelineProgress apiDone={apiDone} />}
 
       {error && (
         <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-sm">
